@@ -394,11 +394,11 @@
 	.main-menu .navbar-header .navbar-toggle{
 		display:inline-block;
 		z-index:7;
-		border:1px solid #1f8ceb;
+		border:1px solid #ff3301;
 		float:none;
 		margin:0px 0px 0px 0px;
 		border-radius:0px;
-		background:#1f8ceb;
+		background:#ff3301;
 	}
 	
 	.main-menu .navbar-header .navbar-toggle .icon-bar{
