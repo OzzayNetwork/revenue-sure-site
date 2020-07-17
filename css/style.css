@@ -1935,9 +1935,11 @@ img{
 ***/
 
 .features-section-two{
-	position:relative;
-	padding:0px;
-	background:#f2f5f8;
+	position: relative;
+    padding: 85px 80px 10px;
+    background: white;
+    padding-top: 100px;
+    padding-bottom: 310px;
 }
 
 .features-section-two .features-container{
@@ -1959,7 +1961,7 @@ img{
 }
 
 .features-section-two .text-column h2{
-	color:#3b566e;
+	color:black;
 	font-size:30px;
 	margin-bottom:40px;
 	padding-bottom:15px;	
@@ -2059,10 +2061,12 @@ img{
 }
 
 .feature-block-two .inner-box h3{
-	color:#3b566e;
-	font-size:18px;
-	font-weight:500;
+	
 	margin-bottom:10px;
+	
+	font-size: 19px;
+    color: #3f345f;
+    font-weight: 600;
 }
 
 .feature-block-two .inner-box h3 a{
@@ -2074,10 +2078,11 @@ img{
 }
 
 .feature-block-two .inner-box .text{
-	font-size:18px;
-	color:#466077;
-	font-weight:300;
-	text-align:justify;
+	font-size: 14px;
+    color: #466077;
+    font-weight: 300;
+    /* text-align: justify; */
+    line-height: normal;
 }
 
 /***
@@ -4647,9 +4652,9 @@ img{
 	line-height:28px;
 	height:50px;
 	font-size:16px;
-	padding:10px 25px;	
+/*	padding:10px 25px;	*/
 	background:none;
-	color:#6f8ba4;
+	color:#495057;
 	border-radius:4px;
 	box-shadow:0px 0px 15px #f2f3f4;
 	transition:all 500ms ease;
@@ -4659,7 +4664,7 @@ img{
 }
 
 .contact-form .form-group input::-webkit-input-placeholder{
-	color:#6f8ba4;
+	color:#495057;
 }
 
 .contact-form .form-group textarea{

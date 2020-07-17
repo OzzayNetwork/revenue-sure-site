@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"><!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -6,6 +6,10 @@
 <!-- Stylesheets -->
 <!-- Web Fonts  -->
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7COpen+Sans:400,700,800" rel="stylesheet" type="text/css">
+<!--	icons-->
+<link href="vendors/simple-line-icons/css/simple-line-icons.min.css" rel="stylesheet">
+<link href="css/icons/flat-icons/font/flaticon.css" rel="stylesheet">
+	
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -48,14 +52,14 @@
               <div class="navbar-collapse collapse scroll-nav clearfix">
                 <ul class="navigation clearfix">
                   <li class="dropdown current"><a href="#banner">Home</a>
-                    <ul>
+                    <ul class="d-none">
                       <li><a href="index.html">Home Version One</a></li>
                       <li><a href="index-2.html">Home Version Two</a></li>
                       <li><a href="index-3.html">Home Version Three</a></li>
                       <li><a href="index-4.html">Home Version Four</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"><a href="#">Extra Pages</a>
+                  <li class="dropdown d-none"><a href="#">Extra Pages</a>
                     <ul>
                       <li><a href="about.html">About Us</a></li>
                       <li><a href="price.html">Pricing</a></li>
@@ -75,16 +79,16 @@
                     </ul>
                   </li>
                   <li><a href="#services">Services</a></li>
-                  <li><a href="#features">Feature</a></li>
+                  <li title="System key features and components"><a href="#features">Features</a></li>
                   <li><a href="#overview">Overview</a></li>
-                  <li><a href="#download">Download</a></li>
+                  <li class="d-none"><a href="#download">Download</a></li>
                 </ul>
               </div>
             </nav>
             <!-- Main Menu End--> 
             
             <!--Other Links-->
-            <div class="other-links"> <a href="contact.html" class="theme-btn btn-style-one">Get Quote</a> </div>
+            <div class="other-links"> <a href="contact.html" class="theme-btn btn-style-one">Book Demo</a> </div>
           </div>
           <!--Nav Outer End--> 
           
@@ -157,7 +161,7 @@
     <div class="container"> 
       <!--Heading-->
       <div class="sec-title-two alternate centered shape-bg">
-        <h2>Key Feature</h2>
+        <h2>Key Services</h2>
         <div class="desc-text">The platform provides several functionalities, with the main ones being</div>
       </div>
       
@@ -218,10 +222,26 @@
 				 <p>The platform provides detailed dashboards the report on revenue collection and management activities. Collections are displayed on a real-time dashboard, and data is presented in analytical format to show the status of revenue management for the county.</p>
 			</div>
           </div>
+			 
+		 <div class="col-md-4 col-sm-12">
+            <img class="the-phone" src="images/collection/mobile.png">
+          </div>
 			
         </div>
       </div>
     </div>
+	  <div class="container">
+	  		<div class="row ">
+				<div class="the-tablet-container">
+					<div class="col-md-2 col-sm-12">
+						<div class="the-thing"><img src="images/collection/shape.png"></div>
+					</div>
+					<div class="col-sm-12 col-md-7">
+						<div class="the-tablet"><img src="images/collection/tablet.png"></div>
+					</div>
+				</div>
+		  	</div>
+	  </div>
   </section>
 	
 <!--	modules-->
@@ -293,7 +313,7 @@
 <!--	modules-->
   
   <!--Key Features Section-->
-  <section class="key-features-section dark-ozzay pt-0" id="features">
+  <section class="key-features-section dark-ozzay" id="features">
 	  <div class="d-none"><img src="images/collection/tablet.png"></div>
 	  <div class="section-angled-layer-top section-angled-layer-increase-angle" style="padding: 5rem 0; background-color: #22252a;"></div>
     <div class="auto-container"> 
@@ -357,7 +377,7 @@
           <!--Image Column-->
           <div class="image-column col-md-6 col-sm-12 col-xs-12">
             <div class="inner">
-              <figure class="image"><img src="images/resource/featured-image-10.png" alt=""></figure>
+              <figure class="image"><img src="images/collection/pos2.png" alt=""></figure>
             </div>
           </div>
         </div>
@@ -377,7 +397,7 @@
           <!--Image Column-->
           <div class="image-column col-md-6 col-sm-12 col-xs-12">
             <div class="inner">
-              <figure class="image"><img src="images/resource/featured-image-9.png" alt=""></figure>
+              <figure class="image"><img src="images/collection/bank.svg" alt=""></figure>
             </div>
           </div>
         </div>
@@ -387,326 +407,297 @@
     </div>
   </section>
   
-  <!--Overview Section-->
-  <section class="review-section" id="overview">
-    <div class="auto-container"> 
-      
-      <!--Heading-->
-      <div class="sec-title-two centered">
-        <h2>Take a quick overview</h2>
-        <div class="desc-text">The standard chunk of Lorem Ipsum useds since the 1500s is reproduced below form those</div>
-      </div>
-      <div class="review-tabs tabs-box"> 
-        <!--Buttons-->
-        <div class="buttons-box">
-          <ul class="tab-buttons clearfix">
-            <li class="tab-btn active-btn" data-tab="#tab-one">Modern Design</li>
-            <li class="tab-btn" data-tab="#tab-two">Friendly use</li>
-            <li class="tab-btn" data-tab="#tab-three">Face ID</li>
-            <li class="tab-btn" data-tab="#tab-four">Wireless Charging</li>
-            <li class="tab-btn" data-tab="#tab-five">New Sensor</li>
-          </ul>
-        </div>
-        
-        <!--Tabs Content-->
-        <div class="tabs-content"> 
-          <!--Tab / Active tab-->
-          <div class="tab active-tab" id="tab-one">
-            <div class="row clearfix"> 
-              <!--Image Column-->
-              <div class="image-column col-md-4 col-sm-4 col-xs-12">
-                <figure class="image"><img src="images/resource/featured-image-11.png" alt=""></figure>
-              </div>
-              <!--Text Column-->
-              <div class="text-column col-md-8 col-sm-8 col-xs-12">
-                <div class="inner">
-                  <div class="icon"><img src="images/icons/icon-22.png" alt=""></div>
-                  <h3>Modern Design</h3>
-                  <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
-                  <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!--Tab-->
-          <div class="tab" id="tab-two">
-            <div class="row clearfix"> 
-              <!--Image Column-->
-              <div class="image-column col-md-4 col-sm-4 col-xs-12">
-                <figure class="image"><img src="images/resource/featured-image-11.png" alt=""></figure>
-              </div>
-              <!--Text Column-->
-              <div class="text-column col-md-8 col-sm-8 col-xs-12">
-                <div class="inner">
-                  <div class="icon"><img src="images/icons/icon-22.png" alt=""></div>
-                  <h3>Friendly use</h3>
-                  <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
-                  <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!--Tab -->
-          <div class="tab" id="tab-three">
-            <div class="row clearfix"> 
-              <!--Image Column-->
-              <div class="image-column col-md-4 col-sm-4 col-xs-12">
-                <figure class="image"><img src="images/resource/featured-image-11.png" alt=""></figure>
-              </div>
-              <!--Text Column-->
-              <div class="text-column col-md-8 col-sm-8 col-xs-12">
-                <div class="inner">
-                  <div class="icon"><img src="images/icons/icon-22.png" alt=""></div>
-                  <h3>Face ID</h3>
-                  <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
-                  <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!--Tab -->
-          <div class="tab" id="tab-four">
-            <div class="row clearfix"> 
-              <!--Image Column-->
-              <div class="image-column col-md-4 col-sm-4 col-xs-12">
-                <figure class="image"><img src="images/resource/featured-image-11.png" alt=""></figure>
-              </div>
-              <!--Text Column-->
-              <div class="text-column col-md-8 col-sm-8 col-xs-12">
-                <div class="inner">
-                  <div class="icon"><img src="images/icons/icon-22.png" alt=""></div>
-                  <h3>Wireless Charging</h3>
-                  <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
-                  <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!--Tab -->
-          <div class="tab" id="tab-five">
-            <div class="row clearfix"> 
-              <!--Image Column-->
-              <div class="image-column col-md-4 col-sm-4 col-xs-12">
-                <figure class="image"><img src="images/resource/featured-image-11.png" alt=""></figure>
-              </div>
-              <!--Text Column-->
-              <div class="text-column col-md-8 col-sm-8 col-xs-12">
-                <div class="inner">
-                  <div class="icon"><img src="images/icons/icon-22.png" alt=""></div>
-                  <h3>New Sensor</h3>
-                  <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
-                  <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
+  <!-- Revenue Enforcement -->
+  <section class="revenue-enforcement bg-primary" id="testimonials">
+    <div class="container mb-5 pb-4 enforcment">				
+					
+				
+					<div class="row pb-3">
+						<div class="col-lg-12">
+							<h2 class="font-weight-normal text-7">Revenue <strong class="font-weight-extra-bold">Enforcement</strong></h2>
+							<p>
+								To ensure that all citizens pay for government services, we will implement several applications and methods to monitor, verify and ensure adherence to payments for services in the entire authority. These are:
+
+							</p>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="feature-box feature-box-style-2">
+											<div class="feature-box-icon">
+												<i class="icons flaticon-qr-code text-color-primary"></i>
+											</div>
+											<div class="feature-box-info">
+												<h4 class="font-weight-bold text-4 mb-0">Handheld devices </h4>
+												<p class="mb-4">
+													Our devices will enable enforcement officers to scan vehicle number plates, stickers and receipts to confirm parking fees were paid. 
+												</p>
+											</div>
+										</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="feature-box feature-box-style-2">
+												<div class="feature-box-icon">
+													<i class="icons flaticon-pin text-color-primary"></i>
+												</div>
+												<div class="feature-box-info">
+													<h4 class="font-weight-bold text-4 mb-0">Mapping of all revenue assets </h4>
+													<p class="mb-4">
+														We will tag all assets of the County using GIS and provide a map with details of who has paid and who has not paid
+													</p>
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-sm-4">
+											<div class="feature-box feature-box-style-2">
+												<div class="feature-box-icon">
+													<i class="icons flaticon-marketing text-color-primary"></i>
+												</div>
+												<div class="feature-box-info">
+													<h4 class="font-weight-bold text-4 mb-0">Real-time dashboards and analysis </h4>
+													<p class="mb-4">
+														We will provide dashboards that will enable specific revenue streams to follow up on due and overdue accounts
+													</p>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="row d-none">
+										<div class="col-sm-6">
+											<div class="feature-box feature-box-style-2">
+												<div class="feature-box-icon">
+													<i class="icons flaticon-marketing text-color-primary"></i>
+												</div>
+												<div class="feature-box-info">
+													<h4 class="font-weight-bold text-4 mb-0">Real-time dashboards and analysis </h4>
+													<p class="mb-4">
+														We will provide dashboards that will enable specific revenue streams to follow up on due and overdue accounts
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 d-none">
+											<div class="feature-box feature-box-style-2 ">
+												<div class="feature-box-icon">
+													<i class="icons icon-pencil text-color-primary"></i>
+												</div>
+												<div class="feature-box-info">
+													<h4 class="font-weight-bold text-4 mb-0">Real-time dashboards and analysis </h4>
+													<p class="mb-4">
+														We will provide dashboards that will enable specific revenue streams to follow up on due and overdue accounts
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
   </section>
-  
-  <!--Testimonials Section Two-->
-  <section class="testimonials-two" id="testimonials">
+	
+	<!--revenue management section-->
+  <section class="management-section bg-color-grey-scale-1">
     <div class="auto-container"> 
       <!--Heading-->
-      <div class="sec-title-two centered">
-        <h2>What customer says</h2>
-        <div class="desc-text">Grow your traffic and draw customers to your business We couldn't put it better than our users.</div>
-      </div>
-      <div class="testimonial-style-two owl-theme owl-carousel"> 
-        <!--Slide Item-->
-        <div class="slide-item">
-          <div class="inner">
-            <div class="quote-icon"></div>
-            <div class="text">Since investing the time to learn good SEO strategies, using tool such as Traffic Travis, we have come to dominate our specific niche, event photography for the Asian community.</div>
-            <div class="quote-info">
-              <figure class="thumb img-circle"><img class="img-circle" src="images/resource/author-thumb-1.jpg" alt=""></figure>
-              <h4>David Ramirez</h4>
-              <div class="designation">Envato Market</div>
-            </div>
-          </div>
-        </div>
-        <!--Slide Item-->
-        <div class="slide-item">
-          <div class="inner">
-            <div class="quote-icon"></div>
-            <div class="text">Since investing the time to learn good SEO strategies, using tool such as Traffic Travis, we have come to dominate our specific niche, event photography for the Asian community.</div>
-            <div class="quote-info">
-              <figure class="thumb img-circle"><img class="img-circle" src="images/resource/author-thumb-1.jpg" alt=""></figure>
-              <h4>David Ramirez</h4>
-              <div class="designation">Envato Market</div>
-            </div>
-          </div>
-        </div>
-        <!--Slide Item-->
-        <div class="slide-item">
-          <div class="inner">
-            <div class="quote-icon"></div>
-            <div class="text">Since investing the time to learn good SEO strategies, using tool such as Traffic Travis, we have come to dominate our specific niche, event photography for the Asian community.</div>
-            <div class="quote-info">
-              <figure class="thumb img-circle"><img class="img-circle" src="images/resource/author-thumb-1.jpg" alt=""></figure>
-              <h4>David Ramirez</h4>
-              <div class="designation">Envato Market</div>
-            </div>
-          </div>
-        </div>
-        <!--Slide Item-->
-        <div class="slide-item">
-          <div class="inner">
-            <div class="quote-icon"></div>
-            <div class="text">Since investing the time to learn good SEO strategies, using tool such as Traffic Travis, we have come to dominate our specific niche, event photography for the Asian community.</div>
-            <div class="quote-info">
-              <figure class="thumb img-circle"><img class="img-circle" src="images/resource/author-thumb-1.jpg" alt=""></figure>
-              <h4>David Ramirez</h4>
-              <div class="designation">Envato Market</div>
-            </div>
-          </div>
-        </div>
-        <!--Slide Item-->
-        <div class="slide-item">
-          <div class="inner">
-            <div class="quote-icon"></div>
-            <div class="text">Since investing the time to learn good SEO strategies, using tool such as Traffic Travis, we have come to dominate our specific niche, event photography for the Asian community.</div>
-            <div class="quote-info">
-              <figure class="thumb img-circle"><img class="img-circle" src="images/resource/author-thumb-1.jpg" alt=""></figure>
-              <h4>David Ramirez</h4>
-              <div class="designation">Envato Market</div>
-            </div>
-          </div>
-        </div>
-        <!--Slide Item-->
-        <div class="slide-item">
-          <div class="inner">
-            <div class="quote-icon"></div>
-            <div class="text">Since investing the time to learn good SEO strategies, using tool such as Traffic Travis, we have come to dominate our specific niche, event photography for the Asian community.</div>
-            <div class="quote-info">
-              <figure class="thumb img-circle"><img class="img-circle" src="images/resource/author-thumb-1.jpg" alt=""></figure>
-              <h4>David Ramirez</h4>
-              <div class="designation">Envato Market</div>
-            </div>
-          </div>
-        </div>
-        <!--Slide Item-->
-        <div class="slide-item">
-          <div class="inner">
-            <div class="quote-icon"></div>
-            <div class="text">Since investing the time to learn good SEO strategies, using tool such as Traffic Travis, we have come to dominate our specific niche, event photography for the Asian community.</div>
-            <div class="quote-info">
-              <figure class="thumb img-circle"><img class="img-circle" src="images/resource/author-thumb-1.jpg" alt=""></figure>
-              <h4>David Ramirez</h4>
-              <div class="designation">Envato Market</div>
-            </div>
-          </div>
-        </div>
-        <!--Slide Item-->
-        <div class="slide-item">
-          <div class="inner">
-            <div class="quote-icon"></div>
-            <div class="text">Since investing the time to learn good SEO strategies, using tool such as Traffic Travis, we have come to dominate our specific niche, event photography for the Asian community.</div>
-            <div class="quote-info">
-              <figure class="thumb img-circle"><img class="img-circle" src="images/resource/author-thumb-1.jpg" alt=""></figure>
-              <h4>David Ramirez</h4>
-              <div class="designation">Envato Market</div>
-            </div>
-          </div>
-        </div>
-        <!--Slide Item-->
-        <div class="slide-item">
-          <div class="inner">
-            <div class="quote-icon"></div>
-            <div class="text">Since investing the time to learn good SEO strategies, using tool such as Traffic Travis, we have come to dominate our specific niche, event photography for the Asian community.</div>
-            <div class="quote-info">
-              <figure class="thumb img-circle"><img class="img-circle" src="images/resource/author-thumb-1.jpg" alt=""></figure>
-              <h4>David Ramirez</h4>
-              <div class="designation">Envato Market</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!--Blog Section-->
-  <section class="blog-section">
-    <div class="auto-container"> 
-      <!--Heading-->
-      <div class="sec-title-two centered">
-        <h2>Recent Blog</h2>
-        <div class="desc-text">Solution is an easy to use tool for eCommerce. <br>
-          You can present your products.</div>
-      </div>
+    	<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<div class="text-left text-grey">
+				  <h2 class="font-weight-normal text-7 text-black mb-4">Revenue <strong class="font-weight-extra-bold">Management</strong></h2>
+					<p class="font-16 mb-4 text-grey">
+						To ensure that all citizens pay for government services, we will implement several applications and methods to monitor, verify and ensure adherence to payments for services in the entire authority. These are:
+					</p>
+					<ul class="font-14 default-list text-grey">
+						<li class="mb-2">
+							Providing a single point of view for all services offered and payments received by the County. All payments will be automatically reconciled with government records where available.
+
+						</li>
+						<li>
+							Providing analytics with insights on trends, patterns and provision of County services. This includes statistics on users and their requests.
+
+						</li>
+					</ul>
+
+			  </div>
+			</div>
+			<div class="col-md-6 the-rev-laptop">
+				<img  src="images/overview/mac_book_pro_2017_Right.png">
+			</div>
+			
+		</div>
       <div class="row clearfix"> 
-        
-        <!--News Block-->
-        <div class="news-style-one col-md-4 col-sm-6 col-xs-12">
-          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-            <figure class="image-box"><a href="blog-single.html"><img src="images/resource/blog-image-1.jpg" alt=""></a></figure>
-            <div class="lower-content">
-              <div class="post-meta">26 March 2017 By Author</div>
-              <h3><a href="blog-single.html">Excepteur sint occaecat cupidatat</a></h3>
-              <div class="text">Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</div>
-            </div>
-          </div>
-        </div>
-        
-        <!--News Block-->
-        <div class="news-style-one col-md-4 col-sm-6 col-xs-12">
-          <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-            <figure class="image-box"><a href="blog-single.html"><img src="images/resource/blog-image-2.jpg" alt=""></a></figure>
-            <div class="lower-content">
-              <div class="post-meta">26 March 2017 By Author</div>
-              <h3><a href="blog-single.html">Excepteur sint occaecat cupidatat</a></h3>
-              <div class="text">Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</div>
-            </div>
-          </div>
-        </div>
-        
-        <!--News Block-->
-        <div class="news-style-one col-md-4 col-sm-6 col-xs-12">
-          <div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-            <figure class="image-box"><a href="blog-single.html"><img src="images/resource/blog-image-3.jpg" alt=""></a></figure>
-            <div class="lower-content">
-              <div class="post-meta">26 March 2017 By Author</div>
-              <h3><a href="blog-single.html">Excepteur sint occaecat cupidatat</a></h3>
-              <div class="text">Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</div>
-            </div>
-          </div>
-        </div>
+       
       </div>
-      <div class="text-center wow tada" data-wow-delay="0ms" data-wow-duration="1500ms"><a href="blog.html" class="theme-btn btn-style-seven">Go To Blog</a></div>
+      
     </div>
   </section>
   
+ 
   <!--Get App Section-->
-  <section class="get-app-section" id="download">
-    <div class="auto-container"> 
-      <!--Heading-->
-      <div class="sec-title-two centered">
-        <h2>Get The App</h2>
-        <div class="desc-text">Grow your traffic and draw customers to your business We couldn't put it better than our users.</div>
-      </div>
-      <div class="links-outer">
-        <ul class="get-app-links clearfix">
-          <li><a href="#" class="link-box">
-            <div class="icon-box"><span class="icon"><img src="images/icons/apple-icon.png" alt=""></span></div>
-            <span class="title">App Store</span><span class="text">Available on</span></a></li>
-          <li><a href="#" class="link-box">
-            <div class="icon-box"><span class="icon"><img src="images/icons/android-icon.png" alt=""></span></div>
-            <span class="title">Google Play</span><span class="text">Available on</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <section class="features-section-two">
+	  <div class="bg-1"><img  src="images/background/shape_02.png"></div>
+	   <div class="bg-2"><img  src="images/background/shape_02.png"></div>
+	  <div class="bg-3"><img  src="images/background/shape_02.png"></div>
+	   <div class="bg-3"><img  src="images/background/call_dot.png"></div>
+    	<div class="auto-container position-relative">
+			 <div class="universe-top">
+							  <span>Picturing you, at the top of the <strong>Universe!!!</strong></span>
+						  </div>
+            <div class="features-container clearfix">
+            	<div class="row clearfix">
+					
+                	<!--Text Column-->
+                    <div class="text-column col-md-12 col-sm-12 col-xs-12">
+                    	<div class="inner">
+                        	<h2 class="font-weight-normal text-7">Our value  <strong class="font-weight-extra-bold">proposition</strong></h2>
+                           
+                        </div>
+                    </div>
+                    
+                    <!--Features Column-->
+                    <div class="features-column col-md-12 col-sm-12 col-xs-12">
+						
+                    	<div class="inner">
+                        	<div class="row">
+                            	<!--Feature Block-->
+                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
+                                    <div class="inner-box">
+                                        <div class="icon"><div class="icon-04 bg-success"><i class="flaticon-like"></i></div></div>
+                                        <h3>Opex models </h3>
+                                        <div class="text">
+											We implement our platform using an opex model, where the initial expenditure by the revenue authority is minimal, as we recover our costs of implementation through transactional fees. Our models are agile to suit the Authority’s requirements.
+
+										</div>
+                                    </div>
+                                </div>
+                                <!--Feature Block-->
+                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
+                                    <div class="inner-box">
+                                         <div class="icon"><div class="icon-04 bg-primary"><i class="flaticon-pin"></i></div></div>
+                                        <h3>Revenue mapping </h3>
+                                        <div class="text">
+											As part of the implementation, we will conduct a detailed assessment of authority’s administrative area and map all revenue assets. We will present this information on a GIS map showing collection points, collection and enforcement officers, as well as devices.
+
+										</div>
+                                    </div>
+                                </div>
+                                <!--Feature Block-->
+                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
+                                    <div class="inner-box">
+                                        <div class="icon"><div class="icon-04 bg-info"><i class="flaticon-marketing"></i></div></div>
+                                        <h3>Reporting</h3>
+                                        <div class="text">
+											We will provide real-time dashboards that update all payments as soon as they are paid. This dashboard will be able to generate analytical information showing daily, monthly, quarterly and annual trends in parking revenue collection.
+
+										</div>
+                                    </div>
+                                </div>
+                                <!--Feature Block-->
+                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
+                                    <div class="inner-box">
+                                         <div class="icon"><div class="icon-04 bg-warning"><i class="flaticon-brain"></i></div></div>
+                                        <h3>Knowledge transfer</h3>
+                                        <div class="text">
+											We will train the relevant Authority’s staff to ensure that they can fully operate and manage the platform to provide necessary support. We will also ensure the staff are able to respond rapidly to any problems or requests from the Citizens or leadership.
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+	
+<!--	logos-->
+	<section class="sponsors-section pt-4 pb-5" id="clients">
+    	<div class="auto-container">
+        	<!--Heading-->
+        	<div class="sec-title-two centered mb-5">
+                <h2 class="d-none">Our patners</h2>
+                <div class="desc-text text-black font-14">RevenueSure has been developed by <a href=""><strong>Nouveta LTD</strong></a> in partnership with<strong> National Bank</strong></div>
+            </div>
+			<div class="nov-logo mb-5">
+				<img src="images/nouveta/nouveta-logo.svg">
+			</div>
+            
+            
+        </div>
+    </section>
+<!--	logos-->
+	
+<!--	contact form-->
+	<section id="contact" class="section bg-color-grey-scale-1 border-0 py-0 m-0">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 map-container">
+								
+								<!-- Google Maps - Settings on footer -->
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.742830691506!2d36.860844414572455!3d-1.3303745990296856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11a0dda905f7%3A0x5ad84b3f2936f4e0!2sNouveta%20Limited!5e0!3m2!1sen!2ske!4v1595010696154!5m2!1sen!2ske" width="100%" height="612px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				
+							</div>
+							<div class="col-md-6 p-5 my-5">
+								
+								<div class="px-4">
+									<h2 class="font-weight-bold line-height-1 mb-2 text-black">Contact Us</h2>
+									<p class="text-3 mb-4 text-black font-14">Questions, feddback name it, write to us and we will get back to you soonest</p>
+									<form class="contact-form form-style-2 pr-xl-5" action="php/contact-form.php" method="POST" novalidate="novalidate">
+										<div class="contact-form-success alert alert-success d-none mt-4">
+											<strong>Success!</strong> Your message has been sent to us.
+										</div>
+				
+										<div class="contact-form-error alert alert-danger d-none mt-4">
+											<strong>Error!</strong> There was an error sending your message.
+											<span class="mail-error-message text-1 d-block"></span>
+										</div>
+										
+										<div class="form-row">
+											<div class="form-group col-xl-4">
+												<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Name" required="">
+											</div>
+											<div class="form-group col-xl-8">
+												<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email" required="">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col">
+												<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" placeholder="Subject" required="">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col">
+												<textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" name="message" placeholder="Message" required=""></textarea>
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col mt-3">
+												<input type="submit" value="Submit" class="btn btn-primary btn-rounded font-weight-semibold px-5 btn-py-2 text-2" data-loading-text="Loading...">
+											</div>
+										</div>
+									</form>
+								</div>
+				
+							</div>
+						</div>
+					</div>
+				</section>
+<!--	contact form-->
   
   <!--Footer Style Three-->
-  <footer class="footer-style-three"> 
+  <footer class="footer-style-three pt-4"> 
     <!--Footer Upper-->
-    <div class="footer-upper">
+    <div class="footer-upper py-5">
       <div class="auto-container">
+		  <div class="footer-ribbon">
+			  <span>Get in Touch</span>
+		  </div>
         <div class="row clearfix"> 
           <!--Big Column-->
           <div class="big-column col-md-6 col-sm-12 col-xs-12">
@@ -717,8 +708,8 @@
                   <div class="widget-inner">
                     <div class="logo"><img src="images/footer-logo.png" alt=""></div>
                     <ul class="info">
-                      <li><a href="#">info@solution.com</a></li>
-                      <li><a href="#">+65 2545 57581</a></li>
+                      <li><a href="#">info@nouveta.tech</a></li>
+                      <li><a href="#">+254 759 067452 </a>/ <a href>+254 770 387419</a></li>
                     </ul>
                     <div class="social-links">
                       <ul class="clearfix">
@@ -798,18 +789,10 @@
     <div class="footer-bottom">
       <div class="auto-container">
         <div class="row clearfix">
-          <div class="bottom-column col-md-6 col-sm-12 col-xs-12">
-            <div class="copyright">Copyright &copy; 2019, Solution.Com</div>
-          </div>
-          <div class="bottom-column col-md-6 col-sm-12 col-xs-12">
-            <div class="bottom-nav">
-              <ul class="clearfix">
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Account</a></li>
-              </ul>
-            </div>
-          </div>
+          <div class="bottom-column col-md-12 col-sm-12 col-xs-12 veta-foot">
+			  <img class="opacity-5" src="images/nouveta/footer.svg">
+            <div class="copyright">Copyright &copy; <span class="this-year">year</span>, Nouveta LTD</div>
+          </div>         
         </div>
       </div>
     </div>
@@ -826,6 +809,7 @@
 <script src="js/jquery.fancybox.pack.js"></script> 
 <script src="js/owl.js"></script> 
 <script src="js/wow.js"></script> 
+<script src="vendors/moment/moment.min.js"></script> 
 <script src="js/script.js"></script>
 </body>
 </html>

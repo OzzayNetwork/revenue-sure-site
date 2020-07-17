@@ -329,5 +329,9 @@
 	$(window).on('load', function() {
 		handlePreloader();
 	});
+	
+	//the year today
+	var this_year= moment().format('YYYY');
+	$(".this-year").text(this_year);
 
 })(window.jQuery);
