@@ -6,10 +6,12 @@
 <!-- Stylesheets -->
 <!-- Web Fonts  -->
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7COpen+Sans:400,700,800" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,500&display=swap" rel="stylesheet">
 <!--	icons-->
 <link href="vendors/simple-line-icons/css/simple-line-icons.min.css" rel="stylesheet">
 <link href="css/icons/flat-icons/font/flaticon.css" rel="stylesheet">
-	
+<!--animation-->
+<link href="vendors/animate/animate.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -51,33 +53,10 @@
               </div>
               <div class="navbar-collapse collapse scroll-nav clearfix">
                 <ul class="navigation clearfix">
-                  <li class="dropdown current"><a href="#banner">Home</a>
-                    <ul class="d-none">
-                      <li><a href="index.html">Home Version One</a></li>
-                      <li><a href="index-2.html">Home Version Two</a></li>
-                      <li><a href="index-3.html">Home Version Three</a></li>
-                      <li><a href="index-4.html">Home Version Four</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown d-none"><a href="#">Extra Pages</a>
-                    <ul>
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="price.html">Pricing</a></li>
-                      <li class="dropdown"><a href="#">Services</a>
-                        <ul>
-                          <li><a href="services.html">All Services</a></li>
-                          <li><a href="service-detail.html">Service Details</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a href="#">Blog</a>
-                        <ul>
-                          <li><a href="blog.html">Blog Page</a></li>
-                          <li><a href="blog-single.html">Blog Post Details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                  </li>
+                  <li class="current"><a href="#banner">Home</a>
+                    
+                  </li>                  
+                   
                   <li><a href="#services">Services</a></li>
                   <li title="System key features and components"><a href="#features">Features</a></li>
                   <li><a href="#overview">Overview</a></li>
@@ -101,7 +80,11 @@
   <!--Main Banner / Banner Three-->
   <section class="main-banner banner-three" id="banner" style="background-image:url(images/background/banner-bg-3.png);"> 
     <!--Image Layer-->
-    <div class="image-layer" style="background-image:url(images/background/banner-image-1.png)"></div>
+    <div class="ceo-img"><img src="images/nouveta/ceo.svg"></div>
+	  <span class="home-icon bg-primary home1 wow zoomInUp"  data-wow-delay="400ms" data-wow-duration="1000ms"><i class="icons flaticon-marketing"></i></span>
+	  <span class="home-icon bg-info home2 wow zoomIn"  data-wow-delay="900ms" data-wow-duration="1000ms"><i class="flaticon-like"></i></span>
+	  <span class="home-icon bg-success home3 wow zoomInUp"  data-wow-delay="600ms" data-wow-duration="1000ms"><i class="icon-chart icons"></i></span>
+	  <span class="home-icon bg-warning home4 wow zoomInLeft"  data-wow-delay="300ms" data-wow-duration="1000ms"><i class="icon-badge icons"></i></span>
     <div class="auto-container">
       <div class="row clearfix"> 
         <!--Text Column-->
@@ -121,7 +104,7 @@
 			  	<div class="letters"><span class="letter">R</span><span class="letter d-none">o</span><span class="letter">e</span><span class="letter">v</span><span class="letter">e</span><span class="letter">n</span><span class="letter">u</span><span class="letter">e</span><span class="letter">S</span><span class="letter">u</span><span class="letter" style="width: 27px;">r</span><span class="letter d-none">l</span><span class="letter">e</span><span class="letter">.</span><span class="letter d-none">o</span><span class="letter d-none">y</span>
 				  </div>
 			  </h2>
-            <p>
+            <p  data-wow-delay="1900ms" data-wow-duration="1000ms" class="wow fadeInUpShorter">
 				RevenueSureTM is an integrated revenue management platform. It is developed to support a revenue authority’s activities in planning, collection, management and enforcement of revenue services.
   
 			</p>
@@ -160,8 +143,8 @@
   <section class="what-we-offer" id="services">
     <div class="container"> 
       <!--Heading-->
-      <div class="sec-title-two alternate centered shape-bg">
-        <h2>Key Services</h2>
+      <div class="sec-title-two alternate centered shape-bg wow fadeInUp" data-wow-duration="1500ms" data-appear-animation="fadeInUpShorter" data-wow-delay="200">
+        <h2 >Key Services</h2>
         <div class="desc-text">The platform provides several functionalities, with the main ones being</div>
       </div>
       
@@ -169,7 +152,7 @@
       <div class="key-feature image-right">
         <div class="row"> 
           <!--feature-->
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 wow fadeInLeftShorter wow animated" data-wow-delay="300" data-wow-duration="1500ms">
             <div class="features-item text-center">
 				 <img class="img-fluid mb-4" src="images/services/billing.svg" alt="" style="">
 				 <h5 class="mb-4">Billing</h5>
@@ -177,7 +160,7 @@
 			</div>
           </div>
           <!--feature-->
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 fadeInUpShorter wow animated" data-wow-delay="300">
             <div class="features-item text-center">
 				 <img class="img-fluid mb-4" src="images/services/receiving.svg" alt="" style="">
 				 <h5 class="mb-4">Collection</h5>
@@ -186,7 +169,7 @@
           </div>
 			
 			<!--feature-->
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 wow animated fadeInRight">
             <div class="features-item text-center">
 				 <img class="img-fluid mb-4" src="images/services/bill.svg" alt="" style="">
 				 <h5 class="mb-4">Receipting</h5>
@@ -197,7 +180,7 @@
 		 <div class="row mt-5"> 
 			
 			<!--feature-->
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 wow fadeInLeftShorter wow animated" data-wow-delay="300" data-wow-duration="1500ms">
             <div class="features-item text-center">
 				 <img class="img-fluid mb-4" src="images/services/f1.png" alt="" style="">
 				 <h5 class="mb-4">Customer Service & Issuance </h5>
@@ -206,7 +189,7 @@
           </div>
 			
 			<!--feature-->
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 fadeInUpShorter wow animated" data-wow-delay="300">
             <div class="features-item text-center">
 				 <img class="img-fluid mb-4" src="images/services/report.svg" alt="" style="">
 				 <h5 class="mb-4">Reporting</h5>
@@ -223,7 +206,7 @@
 			</div>
           </div>
 			 
-		 <div class="col-md-4 col-sm-12">
+		 <div class="col-md-4 col-sm-12 wow maskUp" data-wow-delay="400ms" data-wow-duration="1500ms">
             <img class="the-phone" src="images/collection/mobile.png">
           </div>
 			
@@ -234,9 +217,9 @@
 	  		<div class="row ">
 				<div class="the-tablet-container">
 					<div class="col-md-2 col-sm-12">
-						<div class="the-thing"><img src="images/collection/shape.png"></div>
+						<div class="the-thing wow maskDown" data-wow-delay="400ms" data-wow-duration="900ms"><img src="images/collection/shape.png"></div>
 					</div>
-					<div class="col-sm-12 col-md-7">
+					<div class="col-sm-12 col-md-7 maskUp wow index-5" data-wow-delay="700ms" data-wow-duration="400ms">
 						<div class="the-tablet"><img src="images/collection/tablet.png"></div>
 					</div>
 				</div>
@@ -318,8 +301,8 @@
 	  <div class="section-angled-layer-top section-angled-layer-increase-angle" style="padding: 5rem 0; background-color: #22252a;"></div>
     <div class="auto-container"> 
       <!--Heading-->
-      <div class="sec-title-two alternate centered">
-        <h2>Revenue Collection</h2>
+      <div class="sec-title-two alternate centered wow slideInUp" data-wow-delay="700ms" data-wow-duration="400ms">
+        <h2 class="wow blurIn" data-wow-delay="300ms" data-wow-duration="500ms">Revenue Collection</h2>
         <div class="desc-text">Our platform supports an authority to collect revenue using the following methods</div>
       </div>
       
@@ -327,7 +310,7 @@
       <div class="key-feature image-right">
         <div class="row clearfix"> 
           <!--Text Column-->
-          <div class="text-column col-md-6 col-sm-12 col-xs-12">
+          <div class="text-column col-md-6 col-sm-12 col-xs-12 wow fadeInLeftShorter" data-wow-delay="700ms" data-wow-duration="400ms" >
             <div class="inner">
               <h3>Web portal</h3>
               <div class="text">Citizens are able to create unique profiles on the authority’s official web portal. This portal provides a breakdown of all digitized services that Citizens can pay online</div>
@@ -336,7 +319,7 @@
           </div>
           <!--Image Column-->
           <div class="image-column col-md-6 col-sm-12 col-xs-12">
-            <div class="inner">
+            <div class="inner wow expandIn" data-wow-delay="500ms" data-wow-duration="1000ms">
               <figure class="image"><img src="images/collection/portal2.png" alt=""></figure>
             </div>
           </div>
@@ -347,7 +330,7 @@
       <div class="key-feature image-left">
         <div class="row clearfix"> 
           <!--Text Column-->
-          <div class="text-column col-md-6 col-sm-12 col-xs-12">
+          <div class="text-column col-md-6 col-sm-12 col-xs-12 wow fadeInRightShorter" data-wow-delay="700ms" data-wow-duration="400ms">
             <div class="inner">
               <h3>Mobile app </h3>
               <div class="text">Citizens will download the government services payment app which will contain all digitized services e.g. business permits, parking, land rates and rents.</div>
@@ -356,7 +339,7 @@
           </div>
           <!--Image Column-->
           <div class="image-column col-md-6 col-sm-12 col-xs-12">
-            <div class="inner">
+            <div class="inner wow expandIn" data-wow-delay="500ms" data-wow-duration="1000ms">
               <figure class="image"><img src="images/collection/2-phones.png" alt=""></figure>
             </div>
           </div>
@@ -367,7 +350,7 @@
       <div class="key-feature image-right">
         <div class="row clearfix"> 
           <!--Text Column-->
-          <div class="text-column col-md-6 col-sm-12 col-xs-12">
+          <div class="text-column col-md-6 col-sm-12 col-xs-12 wow fadeInLeftShorter" data-wow-delay="700ms" data-wow-duration="400ms">
             <div class="inner">
               <h3>Hand-held devices </h3>
               <div class="text">Our handheld devices will support collection of revenues e.g. parking, bus parks, markets, ferry etc. They will also be able to issue receipts, licenses and permits on the spot.</div>
@@ -376,7 +359,7 @@
           </div>
           <!--Image Column-->
           <div class="image-column col-md-6 col-sm-12 col-xs-12">
-            <div class="inner">
+            <div class="inner wow expandIn" data-wow-delay="500ms" data-wow-duration="1000ms">
               <figure class="image"><img src="images/collection/pos2.png" alt=""></figure>
             </div>
           </div>
@@ -387,7 +370,7 @@
       <div class="key-feature image-left">
         <div class="row clearfix"> 
           <!--Text Column-->
-          <div class="text-column col-md-6 col-sm-12 col-xs-12">
+          <div class="text-column col-md-6 col-sm-12 col-xs-12 wow fadeInRightShorter" data-wow-delay="700ms" data-wow-duration="400ms">
             <div class="inner">
               <h3>Banks and agents </h3>
               <div class="text">We will provide our platform to banks and agents for Citizens to pay government fees through their channels e.g. branches, mobile banking, internet banking etc.</div>
@@ -396,7 +379,7 @@
           </div>
           <!--Image Column-->
           <div class="image-column col-md-6 col-sm-12 col-xs-12">
-            <div class="inner">
+            <div class="inner wow expandIn" data-wow-delay="500ms" data-wow-duration="1000ms">
               <figure class="image"><img src="images/collection/bank.svg" alt=""></figure>
             </div>
           </div>
@@ -415,15 +398,15 @@
 				
 					<div class="row pb-3">
 						<div class="col-lg-12">
-							<h2 class="font-weight-normal text-7">Revenue <strong class="font-weight-extra-bold">Enforcement</strong></h2>
-							<p>
+							<h2 class="font-weight-normal text-7 wow fadeInUpShorter"  data-wow-delay="400ms" data-wow-duration="700ms">Revenue <strong class="font-weight-extra-bold">Enforcement</strong></h2>
+							<p class="wow fadeInUpShorter" data-wow-delay="400ms" data-wow-duration="900ms">
 								To ensure that all citizens pay for government services, we will implement several applications and methods to monitor, verify and ensure adherence to payments for services in the entire authority. These are:
 
 							</p>
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="row">
-										<div class="col-sm-4">
+										<div class="col-sm-4 wow fadeInLeftShorter"  data-wow-delay="300ms" data-wow-duration="900ms">
 											<div class="feature-box feature-box-style-2">
 											<div class="feature-box-icon">
 												<i class="icons flaticon-qr-code text-color-primary"></i>
@@ -436,7 +419,7 @@
 											</div>
 										</div>
 										</div>
-										<div class="col-sm-4">
+										<div class="col-sm-4 wow fadeInUpShorter" data-wow-delay="400ms" data-wow-duration="900ms">
 											<div class="feature-box feature-box-style-2">
 												<div class="feature-box-icon">
 													<i class="icons flaticon-pin text-color-primary"></i>
@@ -450,7 +433,7 @@
 											</div>
 										</div>
 										
-										<div class="col-sm-4">
+										<div class="col-sm-4 wow fadeInRightShorter" data-wow-delay="300ms" data-wow-duration="700ms">
 											<div class="feature-box feature-box-style-2">
 												<div class="feature-box-icon">
 													<i class="icons flaticon-marketing text-color-primary"></i>
@@ -507,17 +490,17 @@
       <!--Heading-->
     	<div class="row">
 			<div class="col-sm-12 col-md-6">
-				<div class="text-left text-grey">
-				  <h2 class="font-weight-normal text-7 text-black mb-4">Revenue <strong class="font-weight-extra-bold">Management</strong></h2>
-					<p class="font-16 mb-4 text-grey">
+				<div class="text-left text-black">
+				  <h2 class="font-weight-normal text-7 wow fadeInUpShorter"  data-wow-delay="400ms" data-wow-duration="700ms">Revenue <strong class="font-weight-extra-bold">Management</strong></h2>
+					<p class="font-16 mb-4 text-grey wow fadeInDown"  data-wow-delay="300ms" data-wow-duration="600ms">
 						To ensure that all citizens pay for government services, we will implement several applications and methods to monitor, verify and ensure adherence to payments for services in the entire authority. These are:
 					</p>
 					<ul class="font-14 default-list text-grey">
-						<li class="mb-2">
+						<li class="mb-2 wow fadeInLeftShorter wow"  data-wow-delay="200ms" data-wow-duration="700ms">
 							Providing a single point of view for all services offered and payments received by the County. All payments will be automatically reconciled with government records where available.
 
 						</li>
-						<li>
+						<li  class=" wow fadeInLeftShorter wow"  data-wow-delay="200ms" data-wow-duration="700ms">
 							Providing analytics with insights on trends, patterns and provision of County services. This includes statistics on users and their requests.
 
 						</li>
@@ -525,8 +508,8 @@
 
 			  </div>
 			</div>
-			<div class="col-md-6 the-rev-laptop">
-				<img  src="images/overview/mac_book_pro_2017_Right.png">
+			<div class="col-md-6 the-rev-laptop wow zoomInRight " data-wow-delay="400ms" data-wow-duration="1000ms" >
+				<img class="" data-scroll-speed="6"  src="images/overview/mac_book_pro_2017_Right.png">
 			</div>
 			
 		</div>
@@ -540,13 +523,13 @@
  
   <!--Get App Section-->
   <section class="features-section-two">
-	  <div class="bg-1"><img  src="images/background/shape_02.png"></div>
-	   <div class="bg-2"><img  src="images/background/shape_02.png"></div>
-	  <div class="bg-3"><img  src="images/background/shape_02.png"></div>
-	   <div class="bg-3"><img  src="images/background/call_dot.png"></div>
+	  <div class="bg-1 wow zoomIn"><img  src="images/background/shape_02.png"></div>
+	   <div class="bg-2 maskUp wow" data-wow-delay="1000ms" data-wow-duration="1000ms"><img  src="images/background/shape_02.png"></div>
+	  <div class="bg-3 maskUp slowScroll" data-scroll-speed="9"  data-wow-delay="900ms" data-wow-duration="600ms"><img  src="images/background/shape_02.png d-none"></div>
+	   <div class="bg-3 d-none"><img  src="images/background/call_dot.png"></div>
     	<div class="auto-container position-relative">
 			 <div class="universe-top">
-							  <span>Picturing you, at the top of the <strong>Universe!!!</strong></span>
+							  <span class="wow zoomIn">Picturing you, at the top of the <strong>Universe!!!</strong></span>
 						  </div>
             <div class="features-container clearfix">
             	<div class="row clearfix">
@@ -554,7 +537,7 @@
                 	<!--Text Column-->
                     <div class="text-column col-md-12 col-sm-12 col-xs-12">
                     	<div class="inner">
-                        	<h2 class="font-weight-normal text-7">Our value  <strong class="font-weight-extra-bold">proposition</strong></h2>
+                        	<h2 class="font-weight-normal text-7 wow fadeInUpShorter"  data-wow-delay="400ms" data-wow-duration="700ms">Our value  <strong class="font-weight-extra-bold">proposition</strong></h2>
                            
                         </div>
                     </div>
@@ -565,7 +548,7 @@
                     	<div class="inner">
                         	<div class="row">
                             	<!--Feature Block-->
-                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
+                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="400ms">
                                     <div class="inner-box">
                                         <div class="icon"><div class="icon-04 bg-success"><i class="flaticon-like"></i></div></div>
                                         <h3>Opex models </h3>
@@ -576,7 +559,7 @@
                                     </div>
                                 </div>
                                 <!--Feature Block-->
-                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
+                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="700ms">
                                     <div class="inner-box">
                                          <div class="icon"><div class="icon-04 bg-primary"><i class="flaticon-pin"></i></div></div>
                                         <h3>Revenue mapping </h3>
@@ -587,7 +570,7 @@
                                     </div>
                                 </div>
                                 <!--Feature Block-->
-                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
+                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="700ms">
                                     <div class="inner-box">
                                         <div class="icon"><div class="icon-04 bg-info"><i class="flaticon-marketing"></i></div></div>
                                         <h3>Reporting</h3>
@@ -598,7 +581,7 @@
                                     </div>
                                 </div>
                                 <!--Feature Block-->
-                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
+                                <div class="feature-block-two col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="300ms">
                                     <div class="inner-box">
                                          <div class="icon"><div class="icon-04 bg-warning"><i class="flaticon-brain"></i></div></div>
                                         <h3>Knowledge transfer</h3>
@@ -622,9 +605,9 @@
         	<!--Heading-->
         	<div class="sec-title-two centered mb-5">
                 <h2 class="d-none">Our patners</h2>
-                <div class="desc-text text-black font-14">RevenueSure has been developed by <a href=""><strong>Nouveta LTD</strong></a> in partnership with<strong> National Bank</strong></div>
+                <div class="desc-text text-black font-14 wow fadeInDown">RevenueSure has been developed by <a href=""><strong>Nouveta LTD</strong></a> in partnership with<strong> National Bank</strong></div>
             </div>
-			<div class="nov-logo mb-5">
+			<div class="nov-logo mb-5 wow blurIn">
 				<img src="images/nouveta/nouveta-logo.svg">
 			</div>
             
@@ -646,8 +629,8 @@
 							<div class="col-md-6 p-5 my-5">
 								
 								<div class="px-4">
-									<h2 class="font-weight-bold line-height-1 mb-2 text-black">Contact Us</h2>
-									<p class="text-3 mb-4 text-black font-14">Questions, feddback name it, write to us and we will get back to you soonest</p>
+									<h2 class="font-weight-bold line-height-1 mb-2 text-black wow fadeInUpShorter">Contact Us</h2>
+									<p class="text-3 mb-4 text-black font-14 wow fadeInUpShorter">Questions, feddback name it, write to us and we will get back to you soonest</p>
 									<form class="contact-form form-style-2 pr-xl-5" action="php/contact-form.php" method="POST" novalidate="novalidate">
 										<div class="contact-form-success alert alert-success d-none mt-4">
 											<strong>Success!</strong> Your message has been sent to us.
@@ -659,25 +642,25 @@
 										</div>
 										
 										<div class="form-row">
-											<div class="form-group col-xl-4">
+											<div class="form-group col-xl-4 wow fadeInUpShorter">
 												<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Name" required="">
 											</div>
-											<div class="form-group col-xl-8">
+											<div class="form-group col-xl-8 wow fadeInUpShorter"  data-wow-delay="200ms" data-wow-duration="300ms">
 												<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email" required="">
 											</div>
 										</div>
 										<div class="form-row">
-											<div class="form-group col">
+											<div class="form-group col wow fadeInUpShorter"  data-wow-delay="300ms" data-wow-duration="300ms">
 												<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" placeholder="Subject" required="">
 											</div>
 										</div>
 										<div class="form-row">
-											<div class="form-group col">
+											<div class="form-group col wow fadeInUpShorter"  data-wow-delay="400ms" data-wow-duration="300ms">
 												<textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" name="message" placeholder="Message" required=""></textarea>
 											</div>
 										</div>
 										<div class="form-row">
-											<div class="form-group col mt-3">
+											<div class="form-group col mt-3 wow fadeInUpShorter"  data-wow-delay="500ms" data-wow-duration="300ms">
 												<input type="submit" value="Submit" class="btn btn-primary btn-rounded font-weight-semibold px-5 btn-py-2 text-2" data-loading-text="Loading...">
 											</div>
 										</div>
@@ -700,41 +683,44 @@
 		  </div>
         <div class="row clearfix"> 
           <!--Big Column-->
-          <div class="big-column col-md-6 col-sm-12 col-xs-12">
+          <div class="big-column col-md-7 col-sm-12 col-xs-12">
             <div class="row clearfix"> 
               <!--Footer Column-->
-              <div class="footer-column col-md-7 col-sm-6 col-xs-12">
+              <div class="footer-column col-md-8 col-sm-7 col-xs-12">
                 <div class="footer-widget info-widget">
                   <div class="widget-inner">
-                    <div class="logo"><img src="images/footer-logo.png" alt=""></div>
+                    <div class="logo mb-4"><img src="images/footer-logo.png" alt=""></div>
+					  <div class="text mb-4">
+					  	Feel free to contact us via any of the channels below. Thankyou, looking forward to hearing from you.
+					  </div>
                     <ul class="info">
-                      <li><a href="#">info@nouveta.tech</a></li>
-                      <li><a href="#">+254 759 067452 </a>/ <a href>+254 770 387419</a></li>
+                      <li><span class="mr-3"><i class="fa fa-envelope text-color-primary"></i></span><a href="mailto:info@nouveta.tech" target="new" title="write to us an email">info@nouveta.tech</a></li>
+                      <li><span class="mr-3"><i class="fa text-color-primary fa-phone"></i></span><a href="tel:+254759067452" target="new" title="Call us today">+254 759 067452 </a>/ 
+						  <a href="tel:+254770387419" target="new" title="call Us now">+254 770 387419</a></li>
                     </ul>
                     <div class="social-links">
                       <ul class="clearfix">
-                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                        <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                        <li><a href="https://www.facebook.com/nouvetaltd/" title="visit our facebook page" target="new"><span class="fa fa-facebook-f"></span></a></li>
+                        <li><a href="https://twitter.com/NouvetaLTD" target="new" title="visit our twitter page"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="https://www.linkedin.com/company/nouveta-limited/about/" title="visit our Linkedin page" target="new"><span class="fa fa-linkedin"></span></a></li>
+					  	<li><a href="https://nouveta.tech/" target="new" title="nouveta.tech"><span class="fa fa-globe"></span></a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
               <!--Footer Column-->
-              <div class="footer-column col-md-5 col-sm-6 col-xs-12">
+              <div class="footer-column col-md-4 col-sm-5 col-xs-12">
                 <div class="footer-widget links-widget">
                   <div class="widget-inner">
-                    <h3>Company</h3>
+                    <h3>Links</h3>
                     <div class="links">
                       <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">Career</a></li>
+						<li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#overview">System Overview</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#">Watch</a></li>
                       </ul>
                     </div>
                   </div>
@@ -744,38 +730,21 @@
           </div>
           
           <!--Big Column-->
-          <div class="big-column col-md-6 col-sm-12 col-xs-12">
+          <div class="big-column col-md-5 col-sm-12 col-xs-12">
             <div class="row clearfix"> 
               
               <!--Footer Column-->
-              <div class="footer-column col-md-5 col-sm-6 col-xs-12">
-                <div class="footer-widget links-widget">
-                  <div class="widget-inner">
-                    <h3>Resources</h3>
-                    <div class="links">
-                      <ul>
-                        <li><a href="#">Learning Hub</a></li>
-                        <li><a href="#">Video Tutorials</a></li>
-                        <li><a href="#">Quick Start Guide</a></li>
-                        <li><a href="#">SEO Software Reviews</a></li>
-                        <li><a href="#">Update Stories</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
               <!--Footer Column-->
-              <div class="footer-column col-md-7 col-sm-6 col-xs-12">
+              <div class="footer-column col-xs-12">
                 <div class="footer-widget newsletter-widget">
                   <div class="widget-inner">
-                    <h3>Join Our Newsletter</h3>
-                    <div class="text">There are many variations of passages of Lorem Ipsume available.</div>
-                    <form method="post" action="http://themecraze.net/demos/html/spring/spring/index.html">
-                      <div class="form-group">
-                        <input type="email" name="email-field" value="" placeholder="Email here...">
-                        <button type="submit"><span class="icon lnr lnr-arrow-right"></span></button>
-                      </div>
-                    </form>
+                    <h3>Disclaimer</h3>
+                    <div class="text">
+						RevenueSure is a proprietary to Nouveta Limited. No rights of use or exploitation are granted to the recipient and the recipient is not entitled to copy or reproduce the information without the written approval of Nouveta Limited.
+  
+				  	</div>
+                    
                   </div>
                 </div>
               </div>
@@ -790,7 +759,7 @@
       <div class="auto-container">
         <div class="row clearfix">
           <div class="bottom-column col-md-12 col-sm-12 col-xs-12 veta-foot">
-			  <img class="opacity-5" src="images/nouveta/footer.svg">
+			  <a href="nouveta.tech" target="new" title="visit our company's website"><img class="opacity-5" src="images/nouveta/footer.svg"></a>
             <div class="copyright">Copyright &copy; <span class="this-year">year</span>, Nouveta LTD</div>
           </div>         
         </div>
@@ -810,6 +779,7 @@
 <script src="js/owl.js"></script> 
 <script src="js/wow.js"></script> 
 <script src="vendors/moment/moment.min.js"></script> 
+<script src="js/scroling.js"></script> 
 <script src="js/script.js"></script>
 </body>
 </html>
