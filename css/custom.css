@@ -2610,6 +2610,9 @@ color: #777;
 .btn-mob{
     display: none;
 }
+#features .more-link-one{
+    display: none;
+}
 @media (max-width:768px) {
     .btn-mob{
         display: inline-block;
