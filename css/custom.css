@@ -540,7 +540,7 @@
     padding-top: 250px;
 }
 .banner-three .text-column h4 {
-    font-size: 0.8em;
+    font-size: 12px;
     font-weight: 600;
     line-height: 18px;
     margin: 0 0 14px 0;
@@ -1328,7 +1328,7 @@ section.section.section-angled.section-angled-reverse .section-angled-layer-incr
     background: #212529;
 }
 .dark-ozzay .key-feature .text-column h3 {
-    font-size: 1.80em !important;
+    font-size: 1.80em;
     font-weight: 700;
     color: white;
 }
@@ -1471,6 +1471,9 @@ html .text-color-primary, html .text-primary {
 .feature-box .feature-box-info {
     flex: 1 1 100%;
     padding-left: 15px;
+}
+.img-small{
+    display: none;
 }
 .revenue-enforcement {
     position: relative;
@@ -1640,7 +1643,7 @@ html .text-color-primary, html .text-primary {
 .sec-title-two h2 {
     color: #00000e;
     font-weight: 700;
-    font-size: 2.50em !important;
+    font-size: 2.50em;
 }
 .map-container {
     min-height: 612px;
@@ -2617,5 +2620,45 @@ color: #777;
     .btn-mob{
         display: inline-block;
     } 
+    .sec-title-two.alternate h2{
+        font-size: 1.8em !important;
+    }
+    .dark-ozzay .key-feature .text-column h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .key-feature .text-column .text{
+        font-size: 14px;
+    }
+    .sec-title-two .desc-text{
+        font-size: 16px;
+    }
+    .banner-three .text-column p{
+        font-size: 14px;
+    }
+    .col-sm-none{
+        display: none;
+    }
+    .col-sm-block{
+        display: block;
+    }
+    .banner-three{
+        padding-top: 115px;
+    }
+    .text-7{
+        font-size: 1.5em !important;
+    }
+    .features-section-two .features-container{
+        padding: 25px;
+    }
+    .feature-block-two .inner-box .text{
+        font-size: 13px;
+    }
+    .auto-container .universe-top span{
+        font-size: 12px;
+    }
+    .auto-container .universe-top{
+        left: 36px;
+    }
 }
 

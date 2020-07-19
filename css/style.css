@@ -554,7 +554,8 @@ img{
 	position:relative;
 	float:left;
 	left:0px;
-	padding:15px 0px;
+	padding:5px 0px;
+	padding-top: 15px;
 }
 
 .main-header .main-box .logo-box .logo img{
@@ -1154,7 +1155,7 @@ img{
 .sec-title-two.alternate h2{
 	color:#00000e;
 	font-weight: 700;
-    font-size: 2.50em !important;
+    font-size: 2.50em;
 }
 
 .sec-title-two h2:before{
@@ -1938,7 +1939,7 @@ img{
 
 .features-section-two{
 	position: relative;
-    padding: 85px 80px 10px;
+    /* padding: 85px 80px 10px; */
     background: white;
     padding-top: 100px;
     padding-bottom: 310px;
@@ -1975,7 +1976,7 @@ img{
 	left:0px;
 	bottom:0px;
 	width:50px;
-	border-bottom:2px solid #6db3f1;	
+	border-bottom:2px solid #ff3301;	
 }
 
 .features-section-two .text-column .text{
