@@ -979,6 +979,7 @@ img{
 	background-repeat:no-repeat;
 	background-size:cover;
 	overflow:hidden;
+	height: 100vh;
 }
 
 .banner-three:before{
@@ -989,6 +990,7 @@ img{
 	width:100%;
 	height:200px;
 	background:url(../images/background/banner-shape-2.png) left bottom no-repeat;	
+	display: none;
 }
 
 .banner-three .image-layer{

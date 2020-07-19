@@ -312,6 +312,7 @@
 	.main-header{
 		position:fixed;
 		background:#ffffff;	
+		background-color: #212529;
 	}
 	
 	.main-header.header-style-two{
@@ -389,6 +390,8 @@
 		right:0px;
 		z-index:12;
 		margin-top:-65px;	
+		margin-top: -60px;
+		padding-top: 15px;
 	}
 	
 	.main-menu .navbar-header .navbar-toggle{
@@ -410,8 +413,8 @@
 		margin:0px !important;
 		width:100% !important;
 		border-radius:0px;
-		background:#3b566e;
-		border:1px solid #ffffff;
+		/* background:#3b566e;
+		border:1px solid #ffffff; */
 		border-top:none;
 	}
 	
@@ -483,6 +486,7 @@
 		top:0px !important;
 		left:0px !important;
 		visibility:visible !important;
+		border-top: 1px solid rgba(255, 255, 255, 0.21) !important;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li:first-child{
@@ -498,6 +502,7 @@
 		font-size:16px;
 		background:#3b566e;
 		text-align:left;
+		background: transparent;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li > a:hover,

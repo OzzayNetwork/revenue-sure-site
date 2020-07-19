@@ -1,4 +1,12 @@
+
+$(window).on("load", function () {
+	setTimeout(function () {
+	  $(".preloader").fadeOut()
+	}, 900)
+  }),
+
 (function($) {
+
 
 	"use strict";
 
@@ -328,11 +336,15 @@
    ========================================================================== */
 
 	$(window).on('load', function() {
-		handlePreloader();
+		//handlePreloader();
 	});
 	
 	//the year today
 	var this_year= moment().format('YYYY');
 	$(".this-year").text(this_year);
+
+	// making youtube full screen
+
+	
 
 })(window.jQuery);

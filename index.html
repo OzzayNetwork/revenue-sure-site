@@ -8,8 +8,12 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7COpen+Sans:400,700,800" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,500&display=swap" rel="stylesheet">
 <!--	icons-->
-<link href="vendors/simple-line-icons/css/simple-line-icons.min.css" rel="stylesheet">
 <link href="css/icons/flat-icons/font/flaticon.css" rel="stylesheet">
+<link href="css/icon_fonts/css/icon_set_2.css" rel="stylesheet">
+<link href="css/icon_fonts/css/icon_set_3.css" rel="stylesheet">
+
+<link href="vendors/simple-line-icons/css/simple-line-icons.min.css" rel="stylesheet">
+
 <!--animation-->
 <link href="vendors/animate/animate.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet">
@@ -29,7 +33,10 @@
 <div class="page-wrapper"> 
   
   <!-- Preloader -->
-  <div class="preloader"></div>
+  <div class="preloader">
+	<p>RevenueSure By</p>
+	<img src="images/nouveta/nouveta-orange.svg">
+  </div>
   
   <!-- Main Header-->
   <header class="main-header alternate"> 
@@ -48,6 +55,7 @@
             <!-- Main Menu -->
             <nav class="main-menu">
               <div class="navbar-header"> 
+                <a data-toggle="modal" data-target="#booking-form" class="theme-btn btn-style-one font-14 py-2 mr-4  btn-info btn-mob">Book Demo</a>
                 <!-- Toggle Button -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
               </div>
@@ -67,7 +75,7 @@
             <!-- Main Menu End--> 
             
             <!--Other Links-->
-            <div class="other-links"> <a href="contact.html" class="theme-btn btn-style-one">Book Demo</a> </div>
+            <div class="other-links"> <a data-toggle="modal" data-target="#booking-form" class="theme-btn btn-style-one">Book Demo</a> </div>
           </div>
           <!--Nav Outer End--> 
           
@@ -77,8 +85,9 @@
   </header>
   <!--End Main Header --> 
   
+  
   <!--Main Banner / Banner Three-->
-  <section class="main-banner banner-three" id="banner" style="background-image:url(images/background/banner-bg-3.png);"> 
+  <section class="main-banner banner-three parallax-window"  id="banner" style="background-image:url(images/background/banner-bg-3.png);"> 
     <!--Image Layer-->
     <div class="ceo-img"><img src="images/nouveta/ceo.svg"></div>
 	  <span class="home-icon bg-primary home1 wow zoomInUp"  data-wow-delay="400ms" data-wow-duration="1000ms"><i class="icons flaticon-marketing"></i></span>
@@ -91,11 +100,11 @@
         <div class="text-column col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="inner">
 			<h4 class="text-primary mb-1 pb-0 text-uppercase d-none">Optimise revenue collection and assurance</h4>
-			  <div class="container-anim2">
+			  <div class="container-anim2 flex-md-center">
 				<div class="box">
 					<div class="title">
 						<span class="block"></span>
-						<h4 class="h1-anim2 text-primary mb-1 pb-0 text-uppercase">Optimise revenue collection and assurance</h4><span class="span-anim2"></span>
+						<h4 class="h1-anim2  mb-1 pb-0 text-uppercase">Optimise revenue collection and assurance</h4><span class="span-anim2"></span>
 					</div>
 				</div>
 			</div>
@@ -105,11 +114,14 @@
 				  </div>
 			  </h2>
             <p  data-wow-delay="1900ms" data-wow-duration="1000ms" class="wow fadeInUpShorter">
-				RevenueSureTM is an integrated revenue management platform. It is developed to support a revenue authority’s activities in planning, collection, management and enforcement of revenue services.
+				RevenueSureT is an integrated revenue management platform. It is developed to support a revenue authority’s activities in planning, collection, management and enforcement of revenue services.
   
 			</p>
 			  
-			  <a class="video-open lightbox d-block text-white appear-animation" href="#popup-content-1" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100" data-appear-animation-duration="750" data-plugin-options="{'type':'inline'}"><div class="video-open-icon"></div><span class="text-white">USSD demo video</span></a>
+			  <a data-toggle="modal" data-target="#youtube" class="video-open lightbox d-block text-white wow fadeInUpShorter" data-wow-delay="2000ms" data-wow-duration="1200ms" href="#popup-content-1" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100" data-appear-animation-duration="750" data-plugin-options="{'type':'inline'}">
+				  <div class="video-open-icon"></div>
+				  <span class="text-white">USSD demo video</span>
+				</a>
 				  
 					<div class="testing d-none">
 						<div class="container-anim2">
@@ -133,11 +145,121 @@
 			  
             <div class="links-box clearfix d-none"><a href="#" class="theme-btn btn-style-one">Download</a> <a href="#" class="theme-btn btn-style-five">Lean more</a></div>
           </div>
-        </div>
+		</div>
+		
+		<div class="col-lg-6">
+			<img src="images/background/collecting.svg">
+		</div>
       </div>
     </div>
   </section>
   <!--End Main Banner--> 
+
+  <!-- modals -->
+  <!-- Modal -->
+  <div class="modal fade" id="youtube" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h4 class="modal-title" id="exampleModalLongTitle">Our USSD model</h4>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true"><i class="pe-7s-close"></i></span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="col-12">
+				<div class="video container">
+					<iframe width="560" id="iframe1" height="315" src="https://www.youtube.com/embed/LV0CuIfLys8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>		 
+		</div>
+		<div class="modal-footer">
+		  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+		  <button  type="button" class="btn btn-primary full-screen"><i class="icon-size-fullscreen icons mr-3"></i>Full Screen</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <div class="modal fade" id="booking-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLongTitle">Book for a Demo</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="pe-7s-close"></i></span>
+        </button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="col-12">
+          <div class="px-4">
+            <div class="row">
+              <div class="col-md-5 p-0 position-relative img-cont">
+                <div class="modal-img"></div>
+                <div class="p-5 text-white">
+                  <h4>Book a demo</h4>
+                  <p>Fill in the form and we will get in touch with you in no time and get you going</p>
+                  <img class="" src="images/nouveta/footer.svg">
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-12">
+                <form class="p-5">
+                  <div class="form-group col-sm-12 p-0">
+                    <div class="row">
+                     <div class="col-12 px-4"> <label for="exampleFormControlSelect1">Select Title</label></div>
+                      <div class="col-md-3 col-sm-4">
+                       
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                        
+                      </select>
+                    </div>
+                    </div>
+                  </div>
+                  <label>Name</label>
+                  <div class="row">
+                    
+                    <div class="col-sm-12 col-md-6">
+                      <input type="text" class="form-control" title="enter your first name" placeholder="First name">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <input type="text" class="form-control" title="enter your other names" placeholder="Other Name(s)">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Organization Name</label>
+                    <input type="text" title="what's the name to your organization" class="form-control" id="exampleFormControlInput1" placeholder="Enter company/organization Name">
+                  </div>  
+
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Organization's Phone Number</label>
+                    <input type="text" title="enter a phone number to the organization" class="form-control" id="exampleFormControlInput1" placeholder="Enter company/organization Name">
+                  </div>  
+                  
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Organization Location</label>
+                    <input type="text" title="Remember to specify the country as well" class="form-control"  placeholder="eg. Along Langata road Nairobi, Kenya">
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary mb-2">Send request <i class="ml-2 icon-action-redo icons"></i></button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>		 
+      </div>
+      <div class="modal-footer d-none">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button  type="button" class="btn btn-primary full-screen"><i class="icon-size-fullscreen icons mr-3"></i>Full Screen</button>
+      </div>
+      </div>
+    </div>
+    </div>
+  <!-- modals -->
   
   <!--What We Offer-->
   <section class="what-we-offer" id="services">
@@ -227,73 +349,6 @@
 	  </div>
   </section>
 	
-<!--	modules-->
-	<section class="section border-0 section-dark section-angled section-angled-reverse section-funnel m-0 position-relative overflow-visible d-none" style="background-image: url(images/background/porto_performance_bg.png); background-size: 100%; background-position: top; background-repeat: no-repeat; position: relative" data-plugin-lazyload data-plugin-options="{'threshold': 500, 'effect':'fadeIn'}" data-original="images/background/porto_performance_bg.png">
-					<div class="section-angled-layer-top section-angled-layer-increase-angle" style="padding: 5rem 0; background-color: #22252a;"></div>
-					<svg version="1.1" viewBox="500 200 600 900" width="1920" height="100%" xmlns="http://www.w3.org/2000/svg" class="background-svg-style-1" style="top: 120px;">
-						<defs>
-							<filter id="shadow" x="-300%" y="-300%" width="600%" height="600%">
-							<feDropShadow dx="0" dy="0" stdDeviation="10 10" flood-color="#08c" radius="10" flood-opacity="1" />
-							</filter>
-						</defs>
-						<path id="svg_17" d="m1644.875212,897.875106l-1684.875221,-0.374889l1.25,-446.250108c-1.25,0.372765 496.124925,24.124892 496.124925,24.124892c0,0 255.000064,-106.250026 253.875257,-106.624912c1.124807,0.374885 129.874839,-2.125116 128.750031,-2.500001c1.124808,0.374885 112.374836,-32.125123 111.250027,-32.500008c1.124809,0.374885 144.874844,21.62489 144.874844,21.62489c0,0 128.750032,-73.750018 127.625222,-74.124903c1.124811,0.374884 133.624844,9.124887 133.624844,9.124887c0,0 108.750027,35.000009 108.750027,35.000009c0,0 178.750045,-125.000031 177.625231,-125.374915" opacity="0.5" stroke-opacity="null" stroke-width="0" stroke="#191b1e" fill="#191b1e" fill-opacity="0.4"/>
-						<path id="svg_6" d="m1663.83437,909.61168l-1704.94553,-0.72172l1.11111,-486.66724l648.88966,30.00004l105.55568,-41.11116l126.66682,1.11111l122.22236,-34.44449l126.66682,14.44447c0.49906,0.72171 126.05477,-64.83392 126.05477,-64.83392c0,0 128.88904,4.44445 128.38998,3.72273c0.49906,0.72172 118.27698,28.49953 118.27698,28.49953c0,0 173.33353,-108.88902 172.83447,-109.61073" stroke-opacity="null" stroke-width="0" stroke="#1a1b1f" fill="#1a1b1f" fill-opacity="0.4"/>
-						<ellipse class="dots appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="250" stroke="#000" ry="3.5" rx="3.5" id="svg_9" cy="453.023736" cx="609.150561" stroke-opacity="null" stroke-width="0" fill="#fff"/>
-						<circle class="appear-animation" data-appear-animation="dotPulse" data-appear-animation-delay="2000" stroke="#FFF" r="20" id="svg_9" cy="453.023736" cx="609.150561" stroke-opacity="null" stroke-width="0.2" fill="none" style="transform-origin: 101.5% 50.4%;" />
-
-						<ellipse class="dots appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500" stroke="#000" ry="3.5" rx="3.5" id="svg_10" cy="411.595173" cx="715.341014" stroke-opacity="null" stroke-width="0" fill="#fff"/>
-						<circle class="appear-animation" data-appear-animation="dotPulse" data-appear-animation-delay="250" stroke="#FFF" r="20" id="svg_9" cy="411.595173" cx="715.341014" stroke-opacity="null" stroke-width="0.2" fill="none" style="transform-origin: 119.2% 45.7%;" />
-
-						<ellipse class="dots appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="750" stroke="#000" ry="3.5" rx="3.5" id="svg_11" cy="412.071364" cx="841.05527" stroke-opacity="null" stroke-width="0" fill="#fff"/>
-						<circle class="appear-animation" data-appear-animation="dotPulse" data-appear-animation-delay="2000" stroke="#FFF" r="20" id="svg_9" cy="412.071364" cx="841.05527" stroke-opacity="null" stroke-width="0.2" fill="none" style="transform-origin: 140.1% 45.7%;" />
-
-						<ellipse class="dots appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1000" stroke="#000" ry="3.5" rx="3.5" id="svg_12" cy="378.261847" cx="964.388575" stroke-opacity="null" stroke-width="0" fill="#fff"/>
-						<circle class="appear-animation" data-appear-animation="dotPulse" data-appear-animation-delay="250" stroke="#FFF" r="20" id="svg_9" cy="378.261847" cx="964.388575" stroke-opacity="null" stroke-width="0.2" fill="none" style="transform-origin: 160.7% 42%;" />
-
-						<ellipse class="dots appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1250" stroke="#000" ry="3.5" rx="3.5" id="svg_13" cy="391.595177" cx="1090.102832" stroke-opacity="null" stroke-width="0" fill="#fff"/>
-						<circle class="appear-animation" data-appear-animation="dotPulse" data-appear-animation-delay="2000" stroke="#FFF" r="20" id="svg_9" cy="391.595177" cx="1090.102832" stroke-opacity="null" stroke-width="0.2" fill="none" style="transform-origin: 181.6% 43.5%;" />
-
-						<ellipse class="dots appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1500" stroke="#000" ry="3.5" rx="3.5" id="svg_14" cy="327.706436" cx="1216.769206" stroke-opacity="null" stroke-width="0" fill="#fff"/>
-						<circle class="appear-animation" data-appear-animation="dotPulse" data-appear-animation-delay="250" stroke="#FFF" r="20" id="svg_9" cy="327.706436" cx="1216.769206" stroke-opacity="null" stroke-width="0.2" fill="none" style="transform-origin: 202.8% 36.4%;" />
-
-						<ellipse class="dots appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1750" stroke="#000" ry="3.5" rx="3.5" id="svg_15" cy="332.150871" cx="1346.213343" stroke-opacity="null" stroke-width="0" fill="#fff"/>
-						<circle class="appear-animation" data-appear-animation="dotPulse" data-appear-animation-delay="2000" stroke="#FFF" r="20" id="svg_9" cy="332.150871" cx="1346.213343" stroke-opacity="null" stroke-width="0.2" fill="none" style="transform-origin: 224.3% 36.9%;" />
-
-						<ellipse class="dots appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="2000" stroke="#000" ry="3.5" rx="3.5" id="svg_16" cy="358.26192" cx="1463.43529" stroke-opacity="null" stroke-width="0" fill="#fff"/>
-						<circle class="appear-animation" data-appear-animation="dotPulse" data-appear-animation-delay="250" stroke="#FFF" r="20" id="svg_9" cy="358.26192" cx="1463.43529" stroke-opacity="null" stroke-width="0.2" fill="none" style="transform-origin: 243.8% 39.8%;" />
-
-						<ellipse class="dots appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="2250" stroke="#000" ry="3.5" rx="3.5" id="svg_7" cy="278.817661" cx="1589.546107" stroke-opacity="null" stroke-width="0" fill="#fff"/>
-						<circle class="appear-animation" data-appear-animation="dotPulse" data-appear-animation-delay="2000" stroke="#FFF" r="20" id="svg_9" cy="278.817661" cx="1589.546107" stroke-opacity="null" stroke-width="0.2" fill="none" style="transform-origin: 264.6% 30.9%;" />
-
-						</g>
-					</svg>
-					<img class="img-fluid position-absolute d-none d-lg-block appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" data-appear-animation-duration="750" src="img/lazy.png" data-plugin-lazyload data-plugin-options="{'threshold': 500, 'effect':'fadeIn'}" data-original="img/landing/porto_notebook.png" alt="Performance on Laptop" style="display: block; top: -170px; left: 90px;">
-					<div class=" text-center py-5 mb-5">
-						<div class="row justify-content-center pb-md-5 mb-md-5">
-							<div class="col-md-7 offset-lg-5 pb-md-5 mb-md-5">
-								<h2 class="font-weight-bold text-9 appear-animation mb-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" data-appear-animation-duration="750">Top Performance</h2>
-								<p class="custom-text-color-1 color-inherit mb-4 pb-lg-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-appear-animation-duration="750">Porto has high performance base, all structure are focusing on performance as main point. Porto speed optimization is super fast compared to other templates.</p>
-							</div>
-						</div>
-						<div class="row align-items-center pb-md-5 mb-md-5">
-							<div class="col-12 col-md-7 text-center mt-5">
-								<h2 class="font-weight-bold text-7 text-md-6 text-lg-9 pt-5 pt-md-4 mt-5 mb-lg-3 mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" data-appear-animation-duration="750">Works Perfectly on <span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-no-rotate alternative-font-4 font-weight-bold"> Any </span> Device!</h2>
-								<p class="custom-text-color-1 color-inherit appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-appear-animation-duration="750">We believe you will face lots of traffic from mobile device users not only from desktop or laptop users. Porto is the best solution for you, works fine on any screen resolutions and mobile devices. Try Porto and see how it works!</p>
-							</div>
-							<div class="col-5 d-md-block">
-								<div class="text-right mr-3 mr-lg-5 ml-auto mb-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600" data-appear-animation-duration="750" style="max-width: 244px;" data-plugin-options="{'accY': -100}">
-									<img class="img-fluid" src="img/lazy.png" data-plugin-lazyload data-plugin-options="{'threshold': 500, 'effect':'fadeIn'}" data-original="img/landing/porto_iphone.png" width="244" height="228" alt="Performance on Mobile">
-								</div>
-								<img class="img-fluid appear-animation z-index-1 position-relative" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800" data-appear-animation-duration="750" src="img/lazy.png" data-plugin-lazyload data-plugin-options="{'threshold': 500, 'effect':'fadeIn'}" data-original="img/landing/porto_ipad.png" width="437" height="241" alt="Performance on Tablet" style="margin-bottom: -10%">
-							</div>
-						</div>
-					</div>
-					<div class="section-funnel-layer-bottom">
-						<div class="section-funnel-layer bg-light"></div>
-						<div class="section-funnel-layer bg-light"></div>
-					</div>
-				</section>
-<!--	modules-->
   
   <!--Key Features Section-->
   <section class="key-features-section dark-ozzay" id="features">
@@ -406,7 +461,7 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="row">
-										<div class="col-sm-4 wow fadeInLeftShorter"  data-wow-delay="300ms" data-wow-duration="900ms">
+										<div class="col-md-4 col-sm-12 wow fadeInLeftShorter"  data-wow-delay="300ms" data-wow-duration="900ms">
 											<div class="feature-box feature-box-style-2">
 											<div class="feature-box-icon">
 												<i class="icons flaticon-qr-code text-color-primary"></i>
@@ -419,7 +474,7 @@
 											</div>
 										</div>
 										</div>
-										<div class="col-sm-4 wow fadeInUpShorter" data-wow-delay="400ms" data-wow-duration="900ms">
+										<div class="col-md-4 col-sm-12 wow fadeInUpShorter" data-wow-delay="400ms" data-wow-duration="900ms">
 											<div class="feature-box feature-box-style-2">
 												<div class="feature-box-icon">
 													<i class="icons flaticon-pin text-color-primary"></i>
@@ -433,7 +488,7 @@
 											</div>
 										</div>
 										
-										<div class="col-sm-4 wow fadeInRightShorter" data-wow-delay="300ms" data-wow-duration="700ms">
+										<div class="col-md-4 col-sm-12 wow fadeInRightShorter" data-wow-delay="300ms" data-wow-duration="700ms">
 											<div class="feature-box feature-box-style-2">
 												<div class="feature-box-icon">
 													<i class="icons flaticon-marketing text-color-primary"></i>
@@ -508,7 +563,7 @@
 
 			  </div>
 			</div>
-			<div class="col-md-6 the-rev-laptop wow zoomInRight " data-wow-delay="400ms" data-wow-duration="1000ms" >
+			<div class="col-md-6 col-md-h-auto the-rev-laptop wow zoomInRight " data-wow-delay="400ms" data-wow-duration="1000ms" >
 				<img class="" data-scroll-speed="6"  src="images/overview/mac_book_pro_2017_Right.png">
 			</div>
 			
@@ -526,7 +581,6 @@
 	  <div class="bg-1 wow zoomIn"><img  src="images/background/shape_02.png"></div>
 	   <div class="bg-2 maskUp wow" data-wow-delay="1000ms" data-wow-duration="1000ms"><img  src="images/background/shape_02.png"></div>
 	  <div class="bg-3 maskUp slowScroll" data-scroll-speed="9"  data-wow-delay="900ms" data-wow-duration="600ms"><img  src="images/background/shape_02.png d-none"></div>
-	   <div class="bg-3 d-none"><img  src="images/background/call_dot.png"></div>
     	<div class="auto-container position-relative">
 			 <div class="universe-top">
 							  <span class="wow zoomIn">Picturing you, at the top of the <strong>Universe!!!</strong></span>
@@ -780,6 +834,10 @@
 <script src="js/wow.js"></script> 
 <script src="vendors/moment/moment.min.js"></script> 
 <script src="js/scroling.js"></script> 
+<script src="vendors/parallax/parallax.min.js"></script> 
 <script src="js/script.js"></script>
+
+
+
 </body>
 </html>
