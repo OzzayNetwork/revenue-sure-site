@@ -2499,9 +2499,9 @@ color: #777;
     height: 30px;
 }
 .preloader p{
-    font-size: 14px;
+    font-size: 13px;
     /* font-weight: 600; */
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     color: #F47621;
 }
 
@@ -2634,7 +2634,9 @@ color: #777;
         font-size: 16px;
     }
     .banner-three .text-column p{
-        font-size: 14px;
+        font-size: 13px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     }
     .col-sm-none{
         display: none;
@@ -2643,7 +2645,7 @@ color: #777;
         display: block;
     }
     .banner-three{
-        padding-top: 115px;
+        /* padding-top: 115px; */
     }
     .text-7{
         font-size: 1.5em !important;
@@ -2659,6 +2661,21 @@ color: #777;
     }
     .auto-container .universe-top{
         left: 36px;
+    }
+    .banner-three .text-column h2{
+        color: white;
+    font-weight: 600;
+    font-size: 2.2em;
+    text-transform: capitalize;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    }
+    .sm-display-none{
+        display: none;
+    }
+    .sm-display-block{
+        display: block !important;
     }
 }
 
