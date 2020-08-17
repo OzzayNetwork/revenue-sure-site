@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 17/07/2020 11:28
+  	Creation date: 17/08/2020 06:27
   	*/
 
 @font-face {
@@ -25,15 +25,16 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-       
 font-style: normal;
-
 }
 
-.flaticon-brain:before { content: "\f100"; }
+.flaticon-like:before { content: "\f100"; }
 .flaticon-pin:before { content: "\f101"; }
-.flaticon-marketing:before { content: "\f102"; }
+.flaticon-qr-code:before { content: "\f102"; }
 .flaticon-target:before { content: "\f103"; }
-.flaticon-like:before { content: "\f104"; }
-.flaticon-qr-code:before { content: "\f105"; }
-.flaticon-qr-code-1:before { content: "\f106"; }
+.flaticon-request:before { content: "\f104"; }
+.flaticon-police:before { content: "\f105"; }
+.flaticon-partner:before { content: "\f106"; }
+.flaticon-money:before { content: "\f107"; }
+.flaticon-bill:before { content: "\f108"; }
+.flaticon-tax:before { content: "\f109"; }

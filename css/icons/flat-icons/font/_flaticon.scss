@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 17/07/2020 11:28
+    Creation date: 17/08/2020 06:27
     */
 
     @font-face {
@@ -37,18 +37,24 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-brain:before { content: "\f100"; }
+    .flaticon-like:before { content: "\f100"; }
 .flaticon-pin:before { content: "\f101"; }
-.flaticon-marketing:before { content: "\f102"; }
+.flaticon-qr-code:before { content: "\f102"; }
 .flaticon-target:before { content: "\f103"; }
-.flaticon-like:before { content: "\f104"; }
-.flaticon-qr-code:before { content: "\f105"; }
-.flaticon-qr-code-1:before { content: "\f106"; }
+.flaticon-request:before { content: "\f104"; }
+.flaticon-police:before { content: "\f105"; }
+.flaticon-partner:before { content: "\f106"; }
+.flaticon-money:before { content: "\f107"; }
+.flaticon-bill:before { content: "\f108"; }
+.flaticon-tax:before { content: "\f109"; }
     
-    $font-Flaticon-brain: "\f100";
+    $font-Flaticon-like: "\f100";
     $font-Flaticon-pin: "\f101";
-    $font-Flaticon-marketing: "\f102";
+    $font-Flaticon-qr-code: "\f102";
     $font-Flaticon-target: "\f103";
-    $font-Flaticon-like: "\f104";
-    $font-Flaticon-qr-code: "\f105";
-    $font-Flaticon-qr-code-1: "\f106";
+    $font-Flaticon-request: "\f104";
+    $font-Flaticon-police: "\f105";
+    $font-Flaticon-partner: "\f106";
+    $font-Flaticon-money: "\f107";
+    $font-Flaticon-bill: "\f108";
+    $font-Flaticon-tax: "\f109";
