@@ -2882,5 +2882,160 @@ color: #777;
     -webkit-transition: all 0s ease-in-out;
 }
 
+.iq-amazing-tab .tab-content {
+    background: url(../images/screenshots/phone2.png) no-repeat top center;
+    padding: 87px 36px 99px 44px;
+    background-size: 100% 100%;
+
+    /* with pos */
+    height: 600;
+    width: 268px;
+
+    
+}
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.iq-amazing-tab .tab-content .tab-pane img {
+    width: 100%;
+    width: 218px;
+
+    /* with pos */
+    position: absolute;
+    left: 86px;
+    bottom: 24px;
+    /* right: 47px;*/
+}
+
+.tab-content>.active {
+    display: block;
+}
+.d-flex{
+    display: flex !important;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.iq-amazing-tab .nav-tabs li a:hover {
+    color: #fff;
+    border: none;
+    background: rgba(228,96,31, 1);
+    background: -moz-linear-gradient(left, rgba(228,96,31, 1) 0%, rgba(255,51,1, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(228,96,31, 1)), color-stop(100%, rgba(255,51,1, 1)));
+    background: -webkit-linear-gradient(left, rgba(228,96,31, 1) 0%, rgba(255,51,1, 1) 100%);
+    background: -o-linear-gradient(left, rgba(228,96,31, 1) 0%, rgba(255,51,1, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(228,96,31, 1) 0%, rgba(255,51,1, 1) 100%);
+    background: linear-gradient(to right, rgba(228,96,31, 1) 0%, rgba(255,51,1, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa6b29', endColorstr='#ff3301', GradientType=1);
+}
+
+.iq-amazing-tab .nav-tabs li a:hover h4 {
+    color: #fff;
+}
+.iq-amazing-tab .nav-tabs li a:hover i {
+    background: none;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: snow;
+}
+
+@media only screen and (max-width: 1200px) {
+    .iq-amazing-tab .tab-content .tab-pane img {
+     left: 52px;
+    }
+  }
+
+  @media (max-width: 1199px){
+.iq-fancy-box-01 {
+    padding: 10px 30px;
+}
+
+.iq-amazing-tab .nav-tabs li {
+    margin-top: 20px;
+}
+
+.iq-amazing-tab .tab-content {
+    padding: 74px 30px 82px 36px;
+}
+
+}
+
+@media (max-width: 992px){
+    .nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+        left: 0px !important;
+    }
+}
+
+@media (max-width: 1199px)
+{
+    .iq-fancy-box-01 i {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px)
+{
+    .hidden-sm {
+        display: none !important;
+    }
+    .iq-amazing-tab .nav-tabs li.active a.round-right .iq-fancy-box-01:after{
+        display: none;
+    }
+    .iq-amazing-tab .nav-tabs li.active a.round-right .iq-fancy-box-01:before{
+        display: none;
+    }
+    .iq-amazing-tab .nav-tabs li.active a .iq-fancy-box-01:after{
+        display: none;
+    }
+    .iq-amazing-tab .nav-tabs li.active a .iq-fancy-box-01:before{
+        display: none;
+    }
+    .nav-tabs li.active a.round-right{
+        right: 0px;
+        left: 0px;
+    }
+    
+    
+}
+
+@media (max-width: 767px)
+{
+    .hidden-xs {
+        display: none !important;
+    }
+    .iq-amazing-tab .nav-tabs li.active a.round-right .iq-fancy-box-01:after{
+        display: none;
+    }
+    .iq-amazing-tab .nav-tabs li.active a.round-right .iq-fancy-box-01:before{
+        display: none;
+    }
+    .iq-amazing-tab .nav-tabs li.active a .iq-fancy-box-01:after{
+        display: none;
+    }
+    .iq-amazing-tab .nav-tabs li.active a .iq-fancy-box-01:before{
+        display: none;
+    }
+    .nav-tabs li.active a.round-right{
+        right: 0px;
+        left: 0px;
+    }
+}
+
+/* .nav-tabs li.active a.round-right, .nav-tabs li.active a.round-right:hover, .nav-tabs li.active a.round-right:focus {
+    right: -20px;
+    left: inherit;
+} */
+
+
+
+
 
 
