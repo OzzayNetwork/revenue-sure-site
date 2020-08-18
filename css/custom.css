@@ -525,8 +525,9 @@
 .banner-three .text-column h2 {
     color: white;
     font-weight: 700;
-    font-size: 3.5em;
+    font-size: 4rem;
     text-transform: capitalize;
+    margin-bottom: 3rem;
 }
 .font-weight-bold {
     font-weight: 600 !important;
@@ -1282,7 +1283,7 @@
 }
 .features-item h5 {
     font-size: 19px;
-    color: #3f345f;
+    color: #333333;
     font-weight: 600;
 }
 .what-we-offer {
@@ -1333,7 +1334,7 @@ section.section.section-angled.section-angled-reverse .section-angled-layer-incr
     color: white;
 }
 .dark-ozzay .key-feature .text-column .text {
-    color: #747575;
+    color: #b9b9b9;
 }
 .dark-ozzay .sec-title-two.alternate h2 {
     color: white;
@@ -1373,22 +1374,26 @@ section.section.section-angled.section-angled-reverse .section-angled-layer-incr
 }
 .feature-box.feature-box-style-2 h4 {
     color: #ffffff;
+    margin-bottom: 1.5rem;
 }
 .text-4 {
     font-size: 1.0em !important;
 }
 .enforcment p, .enforcment li {
-    color: #efad8b;
+    color: #ffffffd4;
     line-height: 26px;
     margin: 0 0 20px;
     font-size: 14px;
 }
-.enforcment h2, .overview-block-ptb h2 {
+.enforcment h2, .overview-block-ptb h2  {
     font-size: 2.2em;
     font-weight: 300;
     line-height: 42px;
     margin: 0 0 32px 0;
     color: white;
+}
+#management h2{
+    margin: 0 0 32px 0; 
 }
 .accordion .card-title {
     font-size: 16px;
@@ -2947,6 +2952,132 @@ color: #777;
     -webkit-text-fill-color: snow;
 }
 
+#testimonials .feature-box{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+/* Home Concept */
+.home-concept {
+	background: transparent url(../images/home/home-concept.png) no-repeat center 0;
+	width: 100%;
+    overflow: hidden;
+    background-size: contain;
+}
+
+.home-concept strong {
+	display: block;
+	font-family: "Shadows Into Light", cursive;
+	font-size: 2.2rem;
+    font-weight: normal !important;
+    position: relative;
+    margin-top: 30px;
+    color: #e85a10;
+}
+
+.home-concept .row {
+	position: relative;
+}
+
+.home-concept .process-image {
+	background: transparent url(../images/home/home-concept-item.png) no-repeat 0 0;
+	width: 160px;
+	margin: 120px auto 0 auto;
+	padding-bottom: 50px;
+	position: relative;
+	z-index: 1;
+}
+
+.home-concept .process-image img {
+	border-radius: 150px;
+	margin: 7px 8px;
+	width: auto;
+	height: auto;
+	max-width: 145px;
+	max-height: 145px;
+}
+
+@media (min-width: 992px) {
+	.home-concept .process-image.process-image-on-middle {
+		margin-top: 95px;
+	}
+}
+
+.home-concept .our-work {
+	margin-top: 52px;
+	font-size: 2.2em;
+}
+
+.home-concept .project-image {
+	background: transparent url(../images/home/home-concept-item.png) no-repeat 100% 0;
+	width: 350px;
+	margin: 20px 0 0 -30px;
+	padding-bottom: 45px;
+	position: relative;
+	z-index: 1;
+}
+
+.home-concept .sun {
+	background: transparent url(../images/home/home-concept-icons.png) no-repeat 0 0;
+	width: 60px;
+	height: 56px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 65px;
+}
+
+.home-concept .cloud {
+	background: transparent url(../images/home/home-concept-icons.png) no-repeat 100% 0;
+	width: 116px;
+	height: 56px;
+	display: block;
+	position: absolute;
+	left: 31%;
+	top: 35px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+	.home-concept {
+		background-image: none;
+	}
+
+	.home-concept .project-image {
+		margin: 20px auto 0 auto;
+	}
+
+	.home-concept .process-image {
+		margin-top: 0;
+		padding-bottom: 25px;
+	}
+}
+
+@media (max-width: 479px) {
+	.home-concept .project-image {
+		background-position: 0 0;
+		margin-left: auto;
+		max-width: 160px;
+	}
+
+	.home-concept .fc-slideshow {
+		max-width: 145px;
+		height: 145px;
+	}
+
+	.home-concept .fc-slideshow img {
+		max-height: 145px;
+		max-width: 145px;
+	}
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+
+
+
 @media only screen and (max-width: 1200px) {
     .iq-amazing-tab .tab-content .tab-pane img {
      left: 52px;
@@ -3029,6 +3160,24 @@ color: #777;
     }
 }
 
+@media (min-width: 992px){
+    .ml-lg-auto, .mx-lg-auto {
+        margin-left: auto!important;
+    }
+
+    .ml-lg-5, .mx-lg-5 {
+        margin-left: 3rem!important;
+    }
+    
+}
+
+@media (min-width: 992px){
+    .col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+}
 /* .nav-tabs li.active a.round-right, .nav-tabs li.active a.round-right:hover, .nav-tabs li.active a.round-right:focus {
     right: -20px;
     left: inherit;
