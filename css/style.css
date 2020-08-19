@@ -201,7 +201,7 @@ ul,li{
 
 .btn-style-one:hover{
 	color:#ffffff;
-	background:#3b566e;
+	background:#ec5b0e;
 }
 
 .btn-style-two{
@@ -1948,7 +1948,7 @@ img{
 .features-section-two .features-container{
 	position:relative;
 	padding:85px 80px 10px;
-	background:#f9faf9;
+	background:white;
 	border-radius:4px;
 	-webkit-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.10);
 	-ms-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.10);
@@ -1960,7 +1960,7 @@ img{
 
 .features-section-two .text-column{
 	position:relative;
-	margin-bottom:70px;	
+	/* margin-bottom:70px;	 */
 }
 
 .features-section-two .text-column h2{
