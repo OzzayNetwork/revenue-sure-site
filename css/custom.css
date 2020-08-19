@@ -538,7 +538,7 @@
     margin: 0 0 20px;
 }
 .banner-three {
-    padding-top: 250px;
+    padding-top: 160px;
 }
 .banner-three .text-column h4 {
     font-size: 12px;
@@ -3320,6 +3320,28 @@ color: #777;
     content: "";
     background-image: linear-gradient(to bottom right, #212529ed, #212529ba);
 }
+.main-home-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-home-container .fc-slideshow img{
+    border: 2px solid #ececec40;
+    padding: 2px;
+
+}
+
+.main-home-container .fc-slideshow{
+    border: 2px solid #ececec;
+    padding: 10px;
+}
+
+.home-slider{
+    justify-content: flex-end;
+    display: flex;
+}
+
 
 
 @media only screen and (max-width: 1200px) {
