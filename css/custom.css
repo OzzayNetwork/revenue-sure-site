@@ -1491,6 +1491,7 @@ html .text-color-primary, html .text-primary {
     position: relative;
     background: #f7f7f7;
     padding: 130px 0px;
+    padding: 70px 0px;
 }
 .font-14 {
     font-size: 14px !important;
@@ -1510,6 +1511,7 @@ html .text-color-primary, html .text-primary {
 }
 .the-rev-laptop img {
     max-width: 813px;
+    margin-left: -204px;
 }
 .bg-color-grey-scale-1 {
     background-color: #EDEDED !important;
@@ -2978,9 +2980,9 @@ color: #777;
 
 .home-concept strong {
 	display: block;
-	font-family: "Shadows Into Light", cursive;
+	/* font-family: "Shadows Into Light", cursive; */
 	font-size: 2.2rem;
-    font-weight: normal !important;
+    font-weight: 500 !important;
     position: relative;
     margin-top: 30px;
     color: #e85a10;
@@ -3178,7 +3180,7 @@ color: #777;
     height: 35px;
 }
 .circular-container{
-    padding-top: 130px;
+    /* padding-top: 130px; */
 }
 
 .word-rotator.slide .word-rotator-words {
@@ -3453,6 +3455,12 @@ color: #777;
         -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
+    }
+}
+
+@media (max-width: 1109px){
+    .the-rev-laptop img{
+        margin-left: -75px;
     }
 }
 

@@ -975,7 +975,7 @@ img{
 /*Banner Three*/
 .banner-three{
 	position:relative;
-	padding:340px 0px;
+	padding:180px 0px 100px;
 	background-position:center top;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -2731,7 +2731,7 @@ img{
 	min-height:520px;
 	max-width:520px;
 	margin:0 auto;
-	padding-top:60px;
+	padding-top:0px;
 	background:url(../images/background/rigns-bg.png) center center no-repeat;
 	background-size:100% auto;
 }

@@ -399,17 +399,35 @@ $(window).on("load", function () {
 		  });
 	}
 
-	// $('#billing .screen-changer-container li').on('click', function(){
-	// 	$('#billing .screen-changer-container li').removeClass('active');
-	// 	$(this).addClass('active');
+	$('#billing .side-a li').on('click', function(){
+		var the_index=$(this).index();
+		// alert(the_index);
+		$('#billing .screen-changer-container li').removeClass('active');
+		$(this).addClass('active');
 
-	// });
+		$('#billing .tab-content .tab-pane').removeClass('active');
+		$('#billing .tab-content .tab-pane').eq(the_index).addClass('active');
+	
+
+	});
+
+	$('#billing .side-b li').on('click', function(){
+		var the_index=$(this).index()+3;
+		// alert(the_index);
+		$('#billing .screen-changer-container li').removeClass('active');
+		$(this).addClass('active');
+
+		$('#billing .tab-content .tab-pane').removeClass('active');
+		$('#billing .tab-content .tab-pane').eq(the_index).addClass('active');
+	
+
+	});
 
 	// var timer = setInterval(alternateScreen(), 4000);
 	setInterval(function(){
 		alternateScreen();
 		// console.log(1+1);
-	}, 6000);
+	}, 7000);
 
 
 	 
