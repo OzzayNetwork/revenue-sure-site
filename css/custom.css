@@ -2543,7 +2543,7 @@ color: #777;
     background-position: center bottom;
     background-attachment: inherit;
     width: 100%;
-    height: 478px;
+    height: 498px;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -3443,6 +3443,18 @@ color: #777;
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
     }
+}
+
+
+.font-regular{
+    font-weight: normal !important;
+}
+.opacity-8{
+    opacity: 0.8 !important;
+}
+
+.font-08{
+    font-size: 0.8em;
 }
 
 
