@@ -345,6 +345,59 @@ $(window).on("load", function () {
 
 	// making youtube full screen
 
+	//alternating scenes
+	var numberOfScreens=0;
+	$('#billing .tab-content .tab-pane').each(function(index){
+		// alert(index);
+		numberOfScreens=index
+
+	});
+	var numberOfScreenChangers=0;
+	$('#billing .screen-changer-container li').each(function(index){
+		// alert(index);
+		numberOfScreenChangers=index
+
+	});
+	
+
+	$('#billing .tab-content .tab-pane').each(function(index) {
+		// alert(numberOfScreens);
+		var tab_index=$(this).index();
+		var isactive=$(this).hasClass('active');
+
+		if(index==numberOfScreens){
+			alert("we are here");
+			if(isactive==true){
+				$('#billing .tab-content .tab-pane').eq(0).addClass('active');
+				$('#billing .screen-changer-container li').removeClass('active');
+				$('#billing .screen-changer-container li').eq(0).addClass('active');
+				
+				$(this).removeClass("active");
+			}
+			return false;
+		}
+
+		if(isactive==true){
+			if(index!==numberOfScreens){
+				// alert("we can change");
+				// $(this).removeClass("active").next().addClass("active");
+
+				$('#billing .screen-changer-container li').removeClass('active');
+				$('#billing .screen-changer-container li').eq(index+1).addClass('active');
+				
+				
+				$(this).next().addClass("active");
+				$(this).removeClass("active");
+				
+			}
+			return false;
+		}
+		
+		
+	  });
+
+	 
+
 	
 
 })(window.jQuery);
