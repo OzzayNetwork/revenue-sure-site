@@ -2581,6 +2581,17 @@ color: #777;
     display: none;
 }
 
+.budge-title{
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #ff34002e;
+    padding: 3px 15px;
+    border-radius: 41px;
+    color: #ff3400;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
 @media(max-width: 1140px){
     .flex-md-center{
         justify-content: center;

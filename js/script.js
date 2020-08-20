@@ -359,42 +359,58 @@ $(window).on("load", function () {
 
 	});
 	
-
-	$('#billing .tab-content .tab-pane').each(function(index) {
-		// alert(numberOfScreens);
-		var tab_index=$(this).index();
-		var isactive=$(this).hasClass('active');
-
-		if(index==numberOfScreens){
-			alert("we are here");
+	
+	function alternateScreen(){
+		console.log("running");
+		$('#billing .tab-content .tab-pane').each(function(index) {
+			// alert(numberOfScreens);
+			var tab_index=$(this).index();
+			var isactive=$(this).hasClass('active');
+	
+			if(index==numberOfScreens){
+				// alert("we are here");
+				if(isactive==true){
+					$('#billing .tab-content .tab-pane').eq(0).addClass('active');
+					$('#billing .screen-changer-container li').removeClass('active');
+					$('#billing .screen-changer-container li').eq(0).addClass('active');
+					
+					$(this).removeClass("active");
+				}
+				return false;
+			}
+	
 			if(isactive==true){
-				$('#billing .tab-content .tab-pane').eq(0).addClass('active');
-				$('#billing .screen-changer-container li').removeClass('active');
-				$('#billing .screen-changer-container li').eq(0).addClass('active');
-				
-				$(this).removeClass("active");
+				if(index!==numberOfScreens){
+					// alert("we can change");
+					// $(this).removeClass("active").next().addClass("active");
+	
+					$('#billing .screen-changer-container li').removeClass('active');
+					$('#billing .screen-changer-container li').eq(index+1).addClass('active');
+					
+					
+					$(this).next().addClass("active");
+					$(this).removeClass("active");
+					
+				}
+				return false;
 			}
-			return false;
-		}
+			
+			
+		  });
+	}
 
-		if(isactive==true){
-			if(index!==numberOfScreens){
-				// alert("we can change");
-				// $(this).removeClass("active").next().addClass("active");
+	// $('#billing .screen-changer-container li').on('click', function(){
+	// 	$('#billing .screen-changer-container li').removeClass('active');
+	// 	$(this).addClass('active');
 
-				$('#billing .screen-changer-container li').removeClass('active');
-				$('#billing .screen-changer-container li').eq(index+1).addClass('active');
-				
-				
-				$(this).next().addClass("active");
-				$(this).removeClass("active");
-				
-			}
-			return false;
-		}
-		
-		
-	  });
+	// });
+
+	// var timer = setInterval(alternateScreen(), 4000);
+	setInterval(function(){
+		alternateScreen();
+		// console.log(1+1);
+	}, 6000);
+
 
 	 
 
