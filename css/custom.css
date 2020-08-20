@@ -1560,10 +1560,10 @@ html .text-color-primary, html .text-primary {
     right: 14px;
 }
 .features-section-two {
-    background: url("../images/background/shap.png");
+    background: url("../images/background/galaxy-2.jpg");
     background-attachment: fixed;
     background-position: center right;
-    background-repeat: no-repeat;
+    background-repeat: round;
     overflow: hidden;
 }
 .bg-3 {
