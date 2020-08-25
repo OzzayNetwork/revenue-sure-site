@@ -3489,6 +3489,28 @@ color: #777;
     margin-bottom: 2rem;
 }
 
+#fcSlideshow li span{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    margin-top: 30px;
+    line-height: 44px;
+    height: 44px;
+    left: 80px;
+    right: 80px;
+    background: #ff3301;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    /* border-radius: 20% 10% 50% 5% / 25% 10% 30% 75%; */
+}
+
+.key-feature .image-column .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* .nav-tabs li.active a.round-right, .nav-tabs li.active a.round-right:hover, .nav-tabs li.active a.round-right:focus {
     right: -20px;

@@ -427,7 +427,7 @@ $(window).on("load", function () {
 	setInterval(function(){
 		alternateScreen();
 		// console.log(1+1);
-	}, 7000);
+	}, 5000);
 
 
 	 
